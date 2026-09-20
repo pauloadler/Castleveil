@@ -9,7 +9,7 @@ Use this skill when initializing or repairing the repository structure for the A
 
 ## Procedure
 1. Inspect `ProjectSettings/ProjectVersion.txt` and `Packages/manifest.json` before making changes.
-2. Confirm the project uses Unity 6.3 LTS or document the actual installed version; never silently upgrade the Editor version.
+2. Confirm the project uses Unity 6.6 (Editor 6000.6.2f1) or document the actual installed version; never silently upgrade the Editor version.
 3. Confirm the project was created from Universal 2D or otherwise has a working URP 2D renderer.
 4. Confirm these packages are available before gameplay work:
    - Input System

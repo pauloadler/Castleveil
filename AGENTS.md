@@ -1,7 +1,7 @@
 # ARPG Prototype — Codex Project Instructions
 
 ## Project goal
-Build a small, playable 2D isometric action-RPG prototype in Unity 6.3 LTS using C# and URP 2D.
+Build a small, playable 2D isometric action-RPG prototype in Unity 6.6 (Editor 6000.6.2f1) using C# and URP 2D.
 
 References such as Stoneshard, Drakantos and Dimraeth are references for perspective, readability and combat feel only. Do not copy code, assets, characters, maps, names or other protected content.
 
@@ -26,7 +26,7 @@ Stop when these acceptance criteria are met. Do not expand scope without an expl
 
 ## Technology constraints
 Use:
-- Unity 6.3 LTS
+- Unity 6.6 (Editor 6000.6.2f1)
 - C#
 - Universal 2D / URP 2D
 - Unity Input System

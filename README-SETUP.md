@@ -1,6 +1,6 @@
 # ARPG Codex Starter
 
-This starter is intended to be copied into the ROOT of a Unity 6.3 LTS Universal 2D project.
+This starter is intended to be copied into the ROOT of a Unity 6.6 (Editor 6000.6.2f1) Universal 2D project.
 
 ## Contents
 - `AGENTS.md`: persistent Codex rules for this repository.
@@ -12,7 +12,7 @@ This starter is intended to be copied into the ROOT of a Unity 6.3 LTS Universal
 ## Recommended order
 1. Install Git.
 2. Install Unity Hub.
-3. Install Unity 6.3 LTS with Windows Build Support (IL2CPP) if you plan to create Windows builds.
+3. Install Unity 6.6 (Editor 6000.6.2f1) with Windows Build Support (IL2CPP) if you plan to create Windows builds.
 4. Create a `Universal 2D` project.
 5. Install/confirm Input System and Cinemachine in Package Manager.
 6. Initialize Git in the Unity project root.
