@@ -24,6 +24,8 @@ namespace Game.Player
         private Vector2 attackDirection;
         private float nextAttackTime;
 
+        public bool IsAttacking => attackHitbox != null && attackHitbox.IsActive;
+
         private void Awake()
         {
             input = GetComponent<PlayerInputReader>();
