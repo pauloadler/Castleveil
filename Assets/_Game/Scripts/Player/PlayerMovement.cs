@@ -12,10 +12,25 @@ namespace Game.Player
 
         private Rigidbody2D body;
         private PlayerInputReader input;
+        private MonoBehaviour externalMovementOwner;
 
         public Vector2 FacingDirection { get; private set; } = Vector2.down;
         public Vector2 MouseWorldPosition { get; private set; }
         public float MovementSpeed => movementSpeed;
+
+        public bool TryAcquireMovementControl(MonoBehaviour owner)
+        {
+            if (owner == null || (externalMovementOwner != null && externalMovementOwner != owner))
+                return false;
+            externalMovementOwner = owner;
+            return true;
+        }
+
+        public void ReleaseMovementControl(MonoBehaviour owner)
+        {
+            if (externalMovementOwner == owner)
+                externalMovementOwner = null;
+        }
 
         private void Awake()
         {
@@ -33,6 +48,8 @@ namespace Game.Player
 
         private void FixedUpdate()
         {
+            if (externalMovementOwner != null)
+                return;
             // Velocity is in units per second. The physics step applies delta time.
             body.linearVelocity = Vector2.ClampMagnitude(input.MoveInput, 1f) * movementSpeed;
         }
@@ -57,7 +74,7 @@ namespace Game.Player
 
         private void OnDisable()
         {
-            if (body != null)
+            if (body != null && externalMovementOwner == null)
                 body.linearVelocity = Vector2.zero;
         }
 

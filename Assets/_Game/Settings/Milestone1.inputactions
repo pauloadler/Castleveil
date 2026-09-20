@@ -50,6 +50,22 @@
           "isPartOfComposite": false,
           "id": "fac6c503-961e-4153-a9f7-403013080eaf",
           "action": "Pointer"
+        },
+        {
+          "path": "<Mouse>/leftButton",
+          "isComposite": false,
+          "name": "",
+          "isPartOfComposite": false,
+          "id": "6b396e8b-a5f2-46dc-b6d2-59fa863c7d31",
+          "action": "BasicAttack"
+        },
+        {
+          "path": "<Keyboard>/space",
+          "isComposite": false,
+          "name": "",
+          "isPartOfComposite": false,
+          "id": "df6de25a-78a6-43de-b2b5-995859635fbf",
+          "action": "Dodge"
         }
       ],
       "name": "Player",
@@ -67,6 +83,20 @@
           "name": "Pointer",
           "initialStateCheck": true,
           "expectedControlType": "Vector2"
+        },
+        {
+          "type": "Button",
+          "id": "3c6f1da9-badb-4bf5-98b0-53e49d21787a",
+          "name": "BasicAttack",
+          "initialStateCheck": false,
+          "expectedControlType": "Button"
+        },
+        {
+          "type": "Button",
+          "id": "73bdc6a0-5dd9-49be-bf3a-d108146df2c4",
+          "name": "Dodge",
+          "initialStateCheck": false,
+          "expectedControlType": "Button"
         }
       ]
     }

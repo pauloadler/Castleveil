@@ -11,6 +11,8 @@ namespace Game.Player
         private InputActionAsset runtimeActions;
         private InputAction moveAction;
         private InputAction pointerAction;
+        private InputAction basicAttackAction;
+        private InputAction dodgeAction;
         private bool hasFocus = true;
 
         public Vector2 MoveInput => isActiveAndEnabled && hasFocus && moveAction != null
@@ -19,6 +21,10 @@ namespace Game.Player
             ? pointerAction.ReadValue<Vector2>() : Vector2.zero;
         public bool HasPointer => isActiveAndEnabled && hasFocus && pointerAction != null
             && pointerAction.enabled && pointerAction.controls.Count > 0;
+        public bool BasicAttackPressedThisFrame => isActiveAndEnabled && hasFocus
+            && basicAttackAction != null && basicAttackAction.WasPressedThisFrame();
+        public bool DodgePressedThisFrame => isActiveAndEnabled && hasFocus
+            && dodgeAction != null && dodgeAction.WasPressedThisFrame();
 
         private void OnEnable()
         {
@@ -33,6 +39,8 @@ namespace Game.Player
             runtimeActions = Instantiate(inputActions);
             moveAction = runtimeActions.FindAction("Player/Move", true);
             pointerAction = runtimeActions.FindAction("Player/Pointer", true);
+            basicAttackAction = runtimeActions.FindAction("Player/BasicAttack");
+            dodgeAction = runtimeActions.FindAction("Player/Dodge");
             runtimeActions.Enable();
         }
 
@@ -46,6 +54,8 @@ namespace Game.Player
             runtimeActions = null;
             moveAction = null;
             pointerAction = null;
+            basicAttackAction = null;
+            dodgeAction = null;
         }
 
         private void OnApplicationFocus(bool focused) => hasFocus = focused;
