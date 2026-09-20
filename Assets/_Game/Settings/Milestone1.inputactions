@@ -1,0 +1,76 @@
+{
+  "maps": [
+    {
+      "id": "85037030-363a-4cc7-9c20-afd17446ea1a",
+      "bindings": [
+        {
+          "path": "2DVector",
+          "isComposite": true,
+          "name": "WASD",
+          "isPartOfComposite": false,
+          "id": "563dbf8b-630d-49a7-80c0-30d264cf0a6c",
+          "action": "Move"
+        },
+        {
+          "path": "<Keyboard>/w",
+          "isComposite": false,
+          "name": "up",
+          "isPartOfComposite": true,
+          "id": "7d1def05-4af5-4e36-8ddb-b5685d55b58e",
+          "action": "Move"
+        },
+        {
+          "path": "<Keyboard>/s",
+          "isComposite": false,
+          "name": "down",
+          "isPartOfComposite": true,
+          "id": "a3fc9aef-7c51-4fc1-858d-6801b2ab725f",
+          "action": "Move"
+        },
+        {
+          "path": "<Keyboard>/a",
+          "isComposite": false,
+          "name": "left",
+          "isPartOfComposite": true,
+          "id": "a87db9bb-48ca-4df3-92e0-a01eb2d60cda",
+          "action": "Move"
+        },
+        {
+          "path": "<Keyboard>/d",
+          "isComposite": false,
+          "name": "right",
+          "isPartOfComposite": true,
+          "id": "7ad43f71-dd3a-4c89-bc1c-8d8aba2facde",
+          "action": "Move"
+        },
+        {
+          "path": "<Mouse>/position",
+          "isComposite": false,
+          "name": "",
+          "isPartOfComposite": false,
+          "id": "fac6c503-961e-4153-a9f7-403013080eaf",
+          "action": "Pointer"
+        }
+      ],
+      "name": "Player",
+      "actions": [
+        {
+          "type": "Value",
+          "id": "2412f992-b362-4b76-9106-e51efe7d2d25",
+          "name": "Move",
+          "initialStateCheck": true,
+          "expectedControlType": "Vector2"
+        },
+        {
+          "type": "Value",
+          "id": "a0f93f35-b707-4269-b255-957e652f4e15",
+          "name": "Pointer",
+          "initialStateCheck": true,
+          "expectedControlType": "Vector2"
+        }
+      ]
+    }
+  ],
+  "name": "Milestone1",
+  "controlSchemes": []
+}
