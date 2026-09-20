@@ -31,6 +31,7 @@ namespace Game.Player
         public bool IsDodging => dodge != null && dodge.IsDodging;
         public PlayerVisualState State { get; private set; }
         public event Action<PlayerVisualState> StateChanged;
+        public event Action<Direction8> FacingChanged;
 
         private void Awake()
         {
@@ -64,7 +65,12 @@ namespace Game.Player
             IsMoving = velocity.sqrMagnitude > movingThreshold * movingThreshold;
             MovementDirection = IsMoving ? velocity.normalized : Vector2.zero;
             if (movement != null) FacingDirection = movement.FacingDirection;
-            Facing = DirectionResolver.Resolve(FacingDirection, Facing);
+            Direction8 nextFacing = DirectionResolver.Resolve(FacingDirection, Facing);
+            if (Facing != nextFacing)
+            {
+                Facing = nextFacing;
+                FacingChanged?.Invoke(Facing);
+            }
 
             PlayerVisualState next = health != null && health.IsDead ? PlayerVisualState.Death
                 : Time.time < hitEndsAt ? PlayerVisualState.Hit
