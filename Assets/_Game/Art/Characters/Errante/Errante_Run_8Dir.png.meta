@@ -1,0 +1,987 @@
+fileFormatVersion: 2
+guid: decf5156fa494e64ca9b23256dfb9b47
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5856754587435936738
+    second: Errante_Run_8Dir_0
+  - first:
+      213: -8631778574677120575
+    second: Errante_Run_8Dir_1
+  - first:
+      213: 6918618383255975096
+    second: Errante_Run_8Dir_2
+  - first:
+      213: 7586493154594097736
+    second: Errante_Run_8Dir_3
+  - first:
+      213: -6816072110364643028
+    second: Errante_Run_8Dir_4
+  - first:
+      213: -9078508345881009543
+    second: Errante_Run_8Dir_5
+  - first:
+      213: -8825402704745329367
+    second: Errante_Run_8Dir_6
+  - first:
+      213: 3425546177094019780
+    second: Errante_Run_8Dir_7
+  - first:
+      213: -6115625024136843122
+    second: Errante_Run_8Dir_8
+  - first:
+      213: -481115087910494462
+    second: Errante_Run_8Dir_9
+  - first:
+      213: -5409574947399590327
+    second: Errante_Run_8Dir_10
+  - first:
+      213: -1804572041552807543
+    second: Errante_Run_8Dir_11
+  - first:
+      213: 8340030752983359280
+    second: Errante_Run_8Dir_12
+  - first:
+      213: 1994824818857186036
+    second: Errante_Run_8Dir_13
+  - first:
+      213: -7347791771075484208
+    second: Errante_Run_8Dir_14
+  - first:
+      213: 6408512015798539493
+    second: Errante_Run_8Dir_15
+  - first:
+      213: -4017058768255162121
+    second: Errante_Run_8Dir_16
+  - first:
+      213: 1443133385439379556
+    second: Errante_Run_8Dir_17
+  - first:
+      213: 7436850893552066327
+    second: Errante_Run_8Dir_18
+  - first:
+      213: -6378569355458798346
+    second: Errante_Run_8Dir_19
+  - first:
+      213: 5332247412026800390
+    second: Errante_Run_8Dir_20
+  - first:
+      213: -3353905250344322691
+    second: Errante_Run_8Dir_21
+  - first:
+      213: 2446109060219001865
+    second: Errante_Run_8Dir_22
+  - first:
+      213: 8829243137676115158
+    second: Errante_Run_8Dir_23
+  - first:
+      213: 476443777564660399
+    second: Errante_Run_8Dir_24
+  - first:
+      213: -1645300228419328862
+    second: Errante_Run_8Dir_25
+  - first:
+      213: -1311300624363652407
+    second: Errante_Run_8Dir_26
+  - first:
+      213: -3905065760309513640
+    second: Errante_Run_8Dir_27
+  - first:
+      213: 4657973994233237535
+    second: Errante_Run_8Dir_28
+  - first:
+      213: -5872544832278214467
+    second: Errante_Run_8Dir_29
+  - first:
+      213: 466804225237603124
+    second: Errante_Run_8Dir_30
+  - first:
+      213: -8206871964979388889
+    second: Errante_Run_8Dir_31
+  - first:
+      213: 8457901693313572365
+    second: Errante_Run_8Dir_32
+  - first:
+      213: 5979445503856534854
+    second: Errante_Run_8Dir_33
+  - first:
+      213: -9210715267200590818
+    second: Errante_Run_8Dir_34
+  - first:
+      213: 6261175128519648193
+    second: Errante_Run_8Dir_35
+  - first:
+      213: -8695185547092524807
+    second: Errante_Run_8Dir_36
+  - first:
+      213: -6732477434814920941
+    second: Errante_Run_8Dir_37
+  - first:
+      213: -8703009003547932780
+    second: Errante_Run_8Dir_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 110
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1530
+        width: 222
+        height: 244
+      alignment: 9
+      pivot: {x: 0.515239, y: 0.018660748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb22c0544f574150800000000000000
+      internalID: 5856754587435936738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1530
+        width: 221
+        height: 244
+      alignment: 9
+      pivot: {x: 0.50194746, y: 0.018660748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9ea849e13c53880800000000000000
+      internalID: -8631778574677120575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_2
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1530
+        width: 221
+        height: 244
+      alignment: 9
+      pivot: {x: 0.51542115, y: 0.022728592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4b57e53ced30060800000000000000
+      internalID: 6918618383255975096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1530
+        width: 221
+        height: 244
+      alignment: 9
+      pivot: {x: 0.46601778, y: 0.0064572194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a83824453a84960800000000000000
+      internalID: 7586493154594097736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1316
+        width: 221
+        height: 213
+      alignment: 9
+      pivot: {x: 0.54236853, y: 0.020360526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21b44a57827861a0800000000000000
+      internalID: -6816072110364643028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_5
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1314
+        width: 221
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5423686, y: 0.029766988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972e75962c8a20280800000000000000
+      internalID: -9078508345881009543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_6
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1314
+        width: 221
+        height: 214
+      alignment: 9
+      pivot: {x: 0.5468598, y: 0.039000325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d02efbffed58580800000000000000
+      internalID: -8825402704745329367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_7
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1314
+        width: 221
+        height: 214
+      alignment: 9
+      pivot: {x: 0.53787714, y: 0.039000325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cae267491cf98f20800000000000000
+      internalID: 3425546177094019780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1111
+        width: 221
+        height: 206
+      alignment: 9
+      pivot: {x: 0.5292297, y: 0.026533108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8075d8417fe02ba0800000000000000
+      internalID: -6115625024136843122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_9
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1111
+        width: 221
+        height: 201
+      alignment: 9
+      pivot: {x: 0.50211483, y: 0.026222646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f9309606cb259f0800000000000000
+      internalID: -481115087910494462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_10
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1111
+        width: 221
+        height: 201
+      alignment: 9
+      pivot: {x: 0.4866206, y: 0.026222646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e156a1f345de4b0800000000000000
+      internalID: -5409574947399590327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_11
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1110
+        width: 221
+        height: 203
+      alignment: 9
+      pivot: {x: 0.4749996, y: 0.02213201}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989b4ab0a4fd4f6e0800000000000000
+      internalID: -1804572041552807543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 890
+        width: 221
+        height: 221
+      alignment: 9
+      pivot: {x: 0.51373553, y: 0.027379377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f186f48cdbdb370800000000000000
+      internalID: 8340030752983359280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_13
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 891
+        width: 221
+        height: 221
+      alignment: 9
+      pivot: {x: 0.4982413, y: 0.01963233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f29d1d8a9a0fab10800000000000000
+      internalID: 1994824818857186036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_14
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 890
+        width: 221
+        height: 221
+      alignment: 9
+      pivot: {x: 0.41689664, y: 0.01963233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5e1818056670a90800000000000000
+      internalID: -7347791771075484208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_15
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 890
+        width: 221
+        height: 221
+      alignment: 9
+      pivot: {x: 0.4362644, y: 0.01963233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e49e7089bb9fe850800000000000000
+      internalID: 6408512015798539493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 669
+        width: 221
+        height: 221
+      alignment: 9
+      pivot: {x: 0.6221948, y: 0.062241223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f86844655a8048c0800000000000000
+      internalID: -4017058768255162121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_17
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 670
+        width: 221
+        height: 221
+      alignment: 9
+      pivot: {x: 0.54085034, y: 0.04674713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4600f920b2a070410800000000000000
+      internalID: 1443133385439379556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_18
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 669
+        width: 221
+        height: 221
+      alignment: 9
+      pivot: {x: 0.5485972, y: 0.058367837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f97bd4c70053760800000000000000
+      internalID: 7436850893552066327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_19
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 669
+        width: 221
+        height: 221
+      alignment: 9
+      pivot: {x: 0.50598836, y: 0.06611488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc9fa067f4ca77a0800000000000000
+      internalID: -6378569355458798346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 463
+        width: 221
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6183213, y: 0.059777863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6097a5015c2fff940800000000000000
+      internalID: 5332247412026800390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_21
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 464
+        width: 221
+        height: 205
+      alignment: 9
+      pivot: {x: 0.6105742, y: 0.04735167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79b8eec1f88471d0800000000000000
+      internalID: -3353905250344322691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_22
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 464
+        width: 221
+        height: 205
+      alignment: 9
+      pivot: {x: 0.5950798, y: 0.043175824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90cd730fa3352f120800000000000000
+      internalID: 2446109060219001865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_23
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 463
+        width: 221
+        height: 206
+      alignment: 9
+      pivot: {x: 0.560218, y: 0.05146656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc7db8bad5c78a70800000000000000
+      internalID: 8829243137676115158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 221
+        height: 224
+      alignment: 9
+      pivot: {x: 0.57183874, y: 0.1116115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2df25671bac9600800000000000000
+      internalID: 476443777564660399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_25
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 239
+        width: 221
+        height: 224
+      alignment: 9
+      pivot: {x: 0.60282713, y: 0.11543342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a46230d828ba29e0800000000000000
+      internalID: -1645300228419328862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_26
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 239
+        width: 221
+        height: 225
+      alignment: 9
+      pivot: {x: 0.5834591, y: 0.11889825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca7e0b97035dcde0800000000000000
+      internalID: -1311300624363652407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_27
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 239
+        width: 221
+        height: 224
+      alignment: 9
+      pivot: {x: 0.53310287, y: 0.103968486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852f534816b6ec9c0800000000000000
+      internalID: -3905065760309513640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 221
+        height: 234
+      alignment: 9
+      pivot: {x: 0.51373553, y: 0.13411696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1097433ba274a040800000000000000
+      internalID: 4657973994233237535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_29
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 6
+        width: 221
+        height: 234
+      alignment: 9
+      pivot: {x: 0.59507996, y: 0.13411696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db84080d697808ea0800000000000000
+      internalID: -5872544832278214467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_30
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 6
+        width: 221
+        height: 233
+      alignment: 9
+      pivot: {x: 0.575712, y: 0.13452528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43350f838fb6a7600800000000000000
+      internalID: 466804225237603124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Run_8Dir_31
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 6
+        width: 221
+        height: 233
+      alignment: 9
+      pivot: {x: 0.54472387, y: 0.12350313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e9a420e655b1e80800000000000000
+      internalID: -8206871964979388889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8ecff29404979fc4ea7242498c58cf12
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":8.0},"gridSpriteSize":{"x":221.0,"y":221.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.4749999940395355,"y":0.039000000804662704},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Errante_Run_8Dir_0: 5856754587435936738
+      Errante_Run_8Dir_1: -8631778574677120575
+      Errante_Run_8Dir_10: -5409574947399590327
+      Errante_Run_8Dir_11: -1804572041552807543
+      Errante_Run_8Dir_12: 8340030752983359280
+      Errante_Run_8Dir_13: 1994824818857186036
+      Errante_Run_8Dir_14: -7347791771075484208
+      Errante_Run_8Dir_15: 6408512015798539493
+      Errante_Run_8Dir_16: -4017058768255162121
+      Errante_Run_8Dir_17: 1443133385439379556
+      Errante_Run_8Dir_18: 7436850893552066327
+      Errante_Run_8Dir_19: -6378569355458798346
+      Errante_Run_8Dir_2: 6918618383255975096
+      Errante_Run_8Dir_20: 5332247412026800390
+      Errante_Run_8Dir_21: -3353905250344322691
+      Errante_Run_8Dir_22: 2446109060219001865
+      Errante_Run_8Dir_23: 8829243137676115158
+      Errante_Run_8Dir_24: 476443777564660399
+      Errante_Run_8Dir_25: -1645300228419328862
+      Errante_Run_8Dir_26: -1311300624363652407
+      Errante_Run_8Dir_27: -3905065760309513640
+      Errante_Run_8Dir_28: 4657973994233237535
+      Errante_Run_8Dir_29: -5872544832278214467
+      Errante_Run_8Dir_3: 7586493154594097736
+      Errante_Run_8Dir_30: 466804225237603124
+      Errante_Run_8Dir_31: -8206871964979388889
+      Errante_Run_8Dir_4: -6816072110364643028
+      Errante_Run_8Dir_5: -9078508345881009543
+      Errante_Run_8Dir_6: -8825402704745329367
+      Errante_Run_8Dir_7: 3425546177094019780
+      Errante_Run_8Dir_8: -6115625024136843122
+      Errante_Run_8Dir_9: -481115087910494462
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

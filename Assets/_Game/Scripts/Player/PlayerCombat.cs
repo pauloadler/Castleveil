@@ -11,7 +11,10 @@ namespace Game.Player
     public sealed class PlayerCombat : MonoBehaviour
     {
         [SerializeField] private Hitbox attackHitbox;
-        [SerializeField, Min(0f)] private float attackCooldown = 0.5f;
+        [SerializeField, Min(0f)] private float attackCooldown = 0.6f;
+        [SerializeField, Min(0.01f)] private float attackDuration = 0.6f;
+        [Tooltip("Hitbox opens after this delay. The full attack ending always closes it.")]
+        [SerializeField, Min(0f)] private float hitboxDelay = 0.25f;
         [SerializeField, Min(0.01f)] private float activeDuration = 0.15f;
         [SerializeField, Min(0f)] private float attackReach = 0.8f;
 
@@ -24,7 +27,14 @@ namespace Game.Player
         private Vector2 attackDirection;
         private float nextAttackTime;
 
-        public bool IsAttacking => attackHitbox != null && attackHitbox.IsActive;
+        public bool IsAttacking { get; private set; }
+        public Direction8 AttackFacing { get; private set; } = Direction8.South;
+        private float attackStartedAt;
+        private float currentAttackDuration;
+        private float currentHitboxDelay;
+        private bool hitboxOpened;
+        public float AttackProgress => currentAttackDuration > 0f
+            ? Mathf.Clamp01((Time.time - attackStartedAt) / currentAttackDuration) : 0f;
 
         private void Awake()
         {
@@ -54,7 +64,7 @@ namespace Game.Player
             // Movement has already resolved this frame's mouse-facing direction.
             if (input.BasicAttackPressedThisFrame && !health.IsDead
                 && (dodge == null || !dodge.IsDodging)
-                && !attackHitbox.IsActive && Time.time >= nextAttackTime)
+                && !IsAttacking && !attackHitbox.IsActive && Time.time >= nextAttackTime)
             {
                 attackRequested = true;
                 attackDirection = movement.FacingDirection;
@@ -63,9 +73,14 @@ namespace Game.Player
 
         private void FixedUpdate()
         {
-            if (dodge != null && dodge.IsDodging)
+            if (health.IsDead || (dodge != null && dodge.IsDodging))
             {
                 CancelAttack();
+                return;
+            }
+            if (IsAttacking)
+            {
+                AdvanceAttack();
                 return;
             }
             if (!attackRequested)
@@ -79,8 +94,40 @@ namespace Game.Player
             attackHitbox.transform.position = transform.position + (Vector3)(attackDirection * attackReach);
             attackHitbox.transform.rotation = Quaternion.Euler(0f, 0f,
                 Mathf.Atan2(attackDirection.y, attackDirection.x) * Mathf.Rad2Deg);
-            attackHitbox.BeginAttack(new DamageInfo(stats.AttackDamage, gameObject), activeDuration);
-            nextAttackTime = Time.time + Mathf.Max(0f, attackCooldown);
+            AttackFacing = DirectionResolver.Resolve(attackDirection);
+            attackStartedAt = Time.fixedTime;
+            currentAttackDuration = Mathf.Max(0.01f, attackDuration);
+            currentHitboxDelay = Mathf.Max(0f, hitboxDelay);
+            hitboxOpened = false;
+            IsAttacking = true;
+            nextAttackTime = attackStartedAt + Mathf.Max(0f, attackCooldown);
+            AdvanceAttack();
+        }
+
+        private void AdvanceAttack()
+        {
+            float elapsed = Time.fixedTime - attackStartedAt;
+            // Ending wins over opening: an oversized delay cannot create a late hitbox.
+            if (elapsed >= currentAttackDuration)
+            {
+                EndAttack();
+                return;
+            }
+            if (!hitboxOpened && elapsed >= currentHitboxDelay)
+            {
+                hitboxOpened = true;
+                attackHitbox.BeginAttack(new DamageInfo(stats.AttackDamage, gameObject), activeDuration);
+            }
+        }
+
+        private void EndAttack()
+        {
+            IsAttacking = false;
+            attackRequested = false;
+            hitboxOpened = false;
+            currentHitboxDelay = 0f;
+            if (attackHitbox != null)
+                attackHitbox.EndAttack();
         }
 
         private void OnDeath(DamageInfo damage) => CancelAttack();
@@ -93,9 +140,9 @@ namespace Game.Player
 
         private void CancelAttack()
         {
-            attackRequested = false;
-            if (attackHitbox != null)
-                attackHitbox.EndAttack();
+            EndAttack();
+            attackStartedAt = 0f;
+            currentAttackDuration = 0f;
         }
     }
 }

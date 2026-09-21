@@ -20,6 +20,7 @@ namespace Game.Player
         [SerializeField, Min(0f)] private float hitPresentationDuration = 0.15f;
 
         private float hitEndsAt;
+        private bool reportedAttack;
         private RuntimeAnimatorController cachedController;
         private AnimatorControllerParameter[] parameters = Array.Empty<AnimatorControllerParameter>();
 
@@ -28,10 +29,14 @@ namespace Game.Player
         public Direction8 Facing { get; private set; } = Direction8.South;
         public bool IsMoving { get; private set; }
         public bool IsAttacking => combat != null && combat.IsAttacking;
+        public Direction8 AttackFacing => combat != null ? combat.AttackFacing : Facing;
+        public float AttackProgress => combat != null ? combat.AttackProgress : 0f;
         public bool IsDodging => dodge != null && dodge.IsDodging;
         public PlayerVisualState State { get; private set; }
         public event Action<PlayerVisualState> StateChanged;
         public event Action<Direction8> FacingChanged;
+        public event Action<bool, Direction8, float> AttackVisualUpdated;
+        public event Action<float> LocomotionVisualUpdated;
 
         private void Awake()
         {
@@ -52,6 +57,11 @@ namespace Game.Player
         {
             if (health != null) health.DamageTaken -= OnDamage;
             hitEndsAt = 0f;
+            if (reportedAttack)
+                AttackVisualUpdated?.Invoke(false, Facing, 0f);
+            reportedAttack = false;
+            IsMoving = false;
+            LocomotionVisualUpdated?.Invoke(0f);
         }
 
         private void OnDamage(DamageInfo damage, float amount)
@@ -82,6 +92,12 @@ namespace Game.Player
                 State = next;
                 StateChanged?.Invoke(State);
             }
+            // Reuse the presentation loop; only active attacks and their end notify listeners.
+            bool attacking = IsAttacking;
+            if (attacking || reportedAttack)
+                AttackVisualUpdated?.Invoke(attacking, AttackFacing, AttackProgress);
+            reportedAttack = attacking;
+            LocomotionVisualUpdated?.Invoke(Time.deltaTime);
             UpdateAnimator();
         }
 

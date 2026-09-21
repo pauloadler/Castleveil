@@ -1,0 +1,1373 @@
+fileFormatVersion: 2
+guid: 6a45b4e87daa41f4fa31339633d77869
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2236080612301533476
+    second: Errante_Attack_8Dir_0
+  - first:
+      213: 2979348700200092243
+    second: Errante_Attack_8Dir_1
+  - first:
+      213: -2718032761384993895
+    second: Errante_Attack_8Dir_2
+  - first:
+      213: 6003941343800185951
+    second: Errante_Attack_8Dir_3
+  - first:
+      213: -568046940893040865
+    second: Errante_Attack_8Dir_4
+  - first:
+      213: 4653155929438222199
+    second: Errante_Attack_8Dir_5
+  - first:
+      213: -2425346159842574024
+    second: Errante_Attack_8Dir_6
+  - first:
+      213: 7820564343702017927
+    second: Errante_Attack_8Dir_7
+  - first:
+      213: -1222275959057417257
+    second: Errante_Attack_8Dir_8
+  - first:
+      213: 6720141153424771972
+    second: Errante_Attack_8Dir_9
+  - first:
+      213: -3247490416391649199
+    second: Errante_Attack_8Dir_10
+  - first:
+      213: -3815731208258218973
+    second: Errante_Attack_8Dir_11
+  - first:
+      213: -6171483865289150101
+    second: Errante_Attack_8Dir_12
+  - first:
+      213: 2120310315282387311
+    second: Errante_Attack_8Dir_13
+  - first:
+      213: -3122719039249518171
+    second: Errante_Attack_8Dir_14
+  - first:
+      213: -782348841930425000
+    second: Errante_Attack_8Dir_15
+  - first:
+      213: -7385032996609502802
+    second: Errante_Attack_8Dir_16
+  - first:
+      213: -1019056590215845137
+    second: Errante_Attack_8Dir_17
+  - first:
+      213: 2812900543531942424
+    second: Errante_Attack_8Dir_18
+  - first:
+      213: -5430809912117449109
+    second: Errante_Attack_8Dir_19
+  - first:
+      213: 2053177396636723735
+    second: Errante_Attack_8Dir_20
+  - first:
+      213: 5142522149529614478
+    second: Errante_Attack_8Dir_21
+  - first:
+      213: -6469088820986621510
+    second: Errante_Attack_8Dir_22
+  - first:
+      213: 2835822963432275471
+    second: Errante_Attack_8Dir_23
+  - first:
+      213: 2389981528173795877
+    second: Errante_Attack_8Dir_24
+  - first:
+      213: 7495406183528155027
+    second: Errante_Attack_8Dir_25
+  - first:
+      213: 786970676021293065
+    second: Errante_Attack_8Dir_26
+  - first:
+      213: 7372259994792472563
+    second: Errante_Attack_8Dir_27
+  - first:
+      213: 7661983138421714966
+    second: Errante_Attack_8Dir_28
+  - first:
+      213: 4442963153145262023
+    second: Errante_Attack_8Dir_29
+  - first:
+      213: -4671604379240249666
+    second: Errante_Attack_8Dir_30
+  - first:
+      213: -5820934665228088188
+    second: Errante_Attack_8Dir_31
+  - first:
+      213: -4403033895163189536
+    second: Errante_Attack_8Dir_32
+  - first:
+      213: -5833896626884141430
+    second: Errante_Attack_8Dir_33
+  - first:
+      213: -2014162936362601169
+    second: Errante_Attack_8Dir_34
+  - first:
+      213: 7010901412914138359
+    second: Errante_Attack_8Dir_35
+  - first:
+      213: -3194891797623468520
+    second: Errante_Attack_8Dir_36
+  - first:
+      213: 1706132930006503113
+    second: Errante_Attack_8Dir_37
+  - first:
+      213: 384831993088367895
+    second: Errante_Attack_8Dir_38
+  - first:
+      213: 1568201057972898497
+    second: Errante_Attack_8Dir_39
+  - first:
+      213: 288608256689427536
+    second: Errante_Attack_8Dir_40
+  - first:
+      213: 3590172300238511249
+    second: Errante_Attack_8Dir_41
+  - first:
+      213: 8302664110044315284
+    second: Errante_Attack_8Dir_42
+  - first:
+      213: 1255901597578217866
+    second: Errante_Attack_8Dir_43
+  - first:
+      213: -2128344827023610680
+    second: Errante_Attack_8Dir_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 110
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1267
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.53357226, y: -0.0002279545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421fe593877280f10800000000000000
+      internalID: 2236080612301533476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1267
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.5302151, y: -0.0002279545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352c2798bd5c85920800000000000000
+      internalID: 2979348700200092243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1267
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.51007164, y: -0.006942496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99bf5c1ba9b974ad0800000000000000
+      internalID: -2718032761384993895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_3
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1267
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.44964162, y: -0.010299767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54dd7987d8425350800000000000000
+      internalID: 6003941343800185951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_4
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1267
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.45299888, y: -0.006942496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fa2502154ed18f0800000000000000
+      internalID: -568046940893040865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_5
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1267
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.4731425, y: -0.0035852252}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777faa21aa4539040800000000000000
+      internalID: 4653155929438222199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1086
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.5077772, y: 0.025590254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831c9358480775ed0800000000000000
+      internalID: -2425346159842574024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1086
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.50518477, y: 0.035959486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787d171e5d9388c60800000000000000
+      internalID: 7820564343702017927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_8
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1086
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.4766684, y: 0.038551964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbf1eabd7a990fe0800000000000000
+      internalID: -1222275959057417257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_9
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1086
+        width: 201
+        height: 181
+      alignment: 9
+      pivot: {x: 0.40428716, y: 0.015220347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b0e5236ccb24d50800000000000000
+      internalID: 6720141153424771972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_10
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1086
+        width: 161
+        height: 181
+      alignment: 9
+      pivot: {x: 0.4067379, y: 0.012627871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1588d771ca89ee2d0800000000000000
+      internalID: -3247490416391649199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_11
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1086
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.48703763, y: 0.030775208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3249565ceaccb0bc0800000000000000
+      internalID: -3815731208258218973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 905
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.48185322, y: -0.0003338387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61b2685f1c7a5aa0800000000000000
+      internalID: -6171483865289150101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_13
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 905
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.551848, y: 0.0048507773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61d0047ffadc6d10800000000000000
+      internalID: 2120310315282387311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_14
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 905
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.5181468, y: 0.010035731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1fe24249fd9a4d0800000000000000
+      internalID: -3122719039249518171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_15
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 905
+        width: 201
+        height: 181
+      alignment: 9
+      pivot: {x: 0.3832771, y: 0.0074432543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d7c429fd98425f0800000000000000
+      internalID: -782348841930425000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_16
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 905
+        width: 161
+        height: 181
+      alignment: 9
+      pivot: {x: 0.38633662, y: -0.0029263154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea15d8efd97138990800000000000000
+      internalID: -7385032996609502802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_17
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 905
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.48185265, y: 0.0048507773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feae92e2e659bd1f0800000000000000
+      internalID: -1019056590215845137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 721
+        width: 181
+        height: 184
+      alignment: 9
+      pivot: {x: 0.53370124, y: 0.0052735703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81289b5142e690720800000000000000
+      internalID: 2812900543531942424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 721
+        width: 181
+        height: 184
+      alignment: 9
+      pivot: {x: 0.5337012, y: 0.012924194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ea1999823e1a4b0800000000000000
+      internalID: -5430809912117449109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_20
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 717
+        width: 181
+        height: 188
+      alignment: 9
+      pivot: {x: 0.50518477, y: 0.015799664}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71aa46bc6f95e7c10800000000000000
+      internalID: 2053177396636723735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_21
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 716
+        width: 181
+        height: 189
+      alignment: 9
+      pivot: {x: 0.44296685, y: 0.025809798}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e887a4416a8ed5740800000000000000
+      internalID: 5142522149529614478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 716
+        width: 181
+        height: 189
+      alignment: 9
+      pivot: {x: 0.481853, y: 0.023327056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab154a4fdfd2936a0800000000000000
+      internalID: -6469088820986621510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_23
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 724
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.49999967, y: 0.002258638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0eb64dd5fdda5720800000000000000
+      internalID: 2835822963432275471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 531
+        width: 181
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5544405, y: 0.07275841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a5b86898bea2120800000000000000
+      internalID: 2389981528173795877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_25
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 543
+        width: 181
+        height: 178
+      alignment: 9
+      pivot: {x: 0.57517964, y: 0.009686416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39746782638050860800000000000000
+      internalID: 7495406183528155027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_26
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 537
+        width: 181
+        height: 180
+      alignment: 9
+      pivot: {x: 0.48185316, y: 0.035988364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900f5e809a1ebea00800000000000000
+      internalID: 786970676021293065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_27
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 543
+        width: 186
+        height: 173
+      alignment: 9
+      pivot: {x: 0.37638673, y: 0.009076951}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ffad65c7678f4660800000000000000
+      internalID: 7372259994792472563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_28
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 532
+        width: 175
+        height: 184
+      alignment: 9
+      pivot: {x: 0.5938449, y: 0.033325195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610b8a8c115d45a60800000000000000
+      internalID: 7661983138421714966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_29
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 532
+        width: 181
+        height: 192
+      alignment: 9
+      pivot: {x: 0.48962975, y: 0.062545456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf6f5da27398ad30800000000000000
+      internalID: 4442963153145262023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 353
+        width: 181
+        height: 178
+      alignment: 9
+      pivot: {x: 0.5648101, y: 0.04395577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6c93c71902b2fb0800000000000000
+      internalID: -4671604379240249666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_31
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 362
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.5881417, y: 0.0074435915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c825a33c2e73fa0800000000000000
+      internalID: -5820934665228088188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_32
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 362
+        width: 181
+        height: 175
+      alignment: 9
+      pivot: {x: 0.56481004, y: -0.004081508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e62bc8200845e2c0800000000000000
+      internalID: -4403033895163189536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_33
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 353
+        width: 187
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5652394, y: 0.023366345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e983a5de5d90fa0800000000000000
+      internalID: -5833896626884141430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_34
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 353
+        width: 174
+        height: 179
+      alignment: 9
+      pivot: {x: 0.5512369, y: 0.03339646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25795a1b714c04e0800000000000000
+      internalID: -2014162936362601169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_35
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 353
+        width: 181
+        height: 179
+      alignment: 9
+      pivot: {x: 0.5777716, y: 0.038639344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc080090b9bb4160800000000000000
+      internalID: 7010901412914138359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 173
+        width: 181
+        height: 180
+      alignment: 9
+      pivot: {x: 0.5051848, y: 0.009920756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e08da56d679a3d0800000000000000
+      internalID: -3194891797623468520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_37
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 181
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.57258713, y: 0.0048511145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce42a04cd66da710800000000000000
+      internalID: 1706132930006503113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_38
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 173
+        width: 181
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5337012, y: 0.020844555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ddc36a8a2375500800000000000000
+      internalID: 384831993088367895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_39
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 173
+        width: 203
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4121647, y: 0.025561523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cacdd4bd8e53c510800000000000000
+      internalID: 1568201057972898497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_40
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 173
+        width: 159
+        height: 180
+      alignment: 9
+      pivot: {x: 0.40261322, y: 0.004707082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054d73b2ea7510400800000000000000
+      internalID: 288608256689427536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_41
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 173
+        width: 181
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4688906, y: 0.015134345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19cd92e7faad2d130800000000000000
+      internalID: 3590172300238511249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 181
+        height: 173
+      alignment: 9
+      pivot: {x: 0.5959189, y: 0.022638705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e7398c40df83370800000000000000
+      internalID: 8302664110044315284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_43
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 0
+        width: 181
+        height: 181
+      alignment: 9
+      pivot: {x: 0.5803644, y: 0.025590628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89ce7459dbdd6110800000000000000
+      internalID: 1255901597578217866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_44
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 181
+        height: 173
+      alignment: 9
+      pivot: {x: 0.5181468, y: 0.033487834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cca7b108a99672e0800000000000000
+      internalID: -2128344827023610680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_45
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 0
+        width: 181
+        height: 173
+      alignment: 9
+      pivot: {x: 0.55703247, y: 0.030775553}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5520e96bbff35479ae69d2d298214e
+      internalID: -1093463093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_46
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 181
+        height: 173
+      alignment: 9
+      pivot: {x: 0.5155542, y: 0.0389124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cba10278a718c478245a40cfbfda9c
+      internalID: -1412078256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Attack_8Dir_47
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 0
+        width: 181
+        height: 173
+      alignment: 9
+      pivot: {x: 0.5388855, y: 0.036200117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d2cdd427037d1449d454ff30b1d320
+      internalID: 1899179879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c27836eb82d3649439c320359359dabd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":8.0},"gridSpriteSize":{"x":181.0,"y":181.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Errante_Attack_8Dir_0: 2236080612301533476
+      Errante_Attack_8Dir_1: 2979348700200092243
+      Errante_Attack_8Dir_10: -3247490416391649199
+      Errante_Attack_8Dir_11: -3815731208258218973
+      Errante_Attack_8Dir_12: -6171483865289150101
+      Errante_Attack_8Dir_13: 2120310315282387311
+      Errante_Attack_8Dir_14: -3122719039249518171
+      Errante_Attack_8Dir_15: -782348841930425000
+      Errante_Attack_8Dir_16: -7385032996609502802
+      Errante_Attack_8Dir_17: -1019056590215845137
+      Errante_Attack_8Dir_18: 2812900543531942424
+      Errante_Attack_8Dir_19: -5430809912117449109
+      Errante_Attack_8Dir_2: -2718032761384993895
+      Errante_Attack_8Dir_20: 2053177396636723735
+      Errante_Attack_8Dir_21: 5142522149529614478
+      Errante_Attack_8Dir_22: -6469088820986621510
+      Errante_Attack_8Dir_23: 2835822963432275471
+      Errante_Attack_8Dir_24: 2389981528173795877
+      Errante_Attack_8Dir_25: 7495406183528155027
+      Errante_Attack_8Dir_26: 786970676021293065
+      Errante_Attack_8Dir_27: 7372259994792472563
+      Errante_Attack_8Dir_28: 7661983138421714966
+      Errante_Attack_8Dir_29: 4442963153145262023
+      Errante_Attack_8Dir_3: 6003941343800185951
+      Errante_Attack_8Dir_30: -4671604379240249666
+      Errante_Attack_8Dir_31: -5820934665228088188
+      Errante_Attack_8Dir_32: -4403033895163189536
+      Errante_Attack_8Dir_33: -5833896626884141430
+      Errante_Attack_8Dir_34: -2014162936362601169
+      Errante_Attack_8Dir_35: 7010901412914138359
+      Errante_Attack_8Dir_36: -3194891797623468520
+      Errante_Attack_8Dir_37: 1706132930006503113
+      Errante_Attack_8Dir_38: 384831993088367895
+      Errante_Attack_8Dir_39: 1568201057972898497
+      Errante_Attack_8Dir_4: -568046940893040865
+      Errante_Attack_8Dir_40: 288608256689427536
+      Errante_Attack_8Dir_41: 3590172300238511249
+      Errante_Attack_8Dir_42: 8302664110044315284
+      Errante_Attack_8Dir_43: 1255901597578217866
+      Errante_Attack_8Dir_44: -2128344827023610680
+      Errante_Attack_8Dir_45: -1093463093
+      Errante_Attack_8Dir_46: -1412078256
+      Errante_Attack_8Dir_47: 1899179879
+      Errante_Attack_8Dir_5: 4653155929438222199
+      Errante_Attack_8Dir_6: -2425346159842574024
+      Errante_Attack_8Dir_7: 7820564343702017927
+      Errante_Attack_8Dir_8: -1222275959057417257
+      Errante_Attack_8Dir_9: 6720141153424771972
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
