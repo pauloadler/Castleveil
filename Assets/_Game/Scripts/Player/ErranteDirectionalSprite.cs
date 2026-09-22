@@ -20,7 +20,8 @@ namespace Game.Player
         [SerializeField] private Sprite northWest;
 
         [Header("Run frames (looping playback order)")]
-        [SerializeField, Min(0.01f)] private float runFramesPerSecond = 8f;
+        [Tooltip("Seconds per complete Run loop. Invalid values use 0.70 seconds.")]
+        [SerializeField] private float runCycleDuration = 0.70f;
         [SerializeField] private Sprite[] run_N = System.Array.Empty<Sprite>();
         [SerializeField] private Sprite[] run_NE = System.Array.Empty<Sprite>();
         [SerializeField] private Sprite[] run_E = System.Array.Empty<Sprite>();
@@ -44,7 +45,8 @@ namespace Game.Player
         private bool showingAttack;
         private bool showingRun;
         private Direction8 runDirection;
-        private float runFrame;
+        private float runCycleTime;
+        private int runRestartFrame;
 
         private void Awake()
         {
@@ -92,7 +94,7 @@ namespace Game.Player
             }
             showingAttack = false;
             showingRun = false;
-            runFrame = 0f;
+            runCycleTime = 0f;
             subscribedSource = null;
         }
 
@@ -107,7 +109,7 @@ namespace Game.Player
             if (showingAttack)
             {
                 showingRun = false;
-                runFrame = 0f;
+                runCycleTime = 0f;
                 return;
             }
             if (subscribedSource != null)
@@ -140,19 +142,26 @@ namespace Game.Player
             if (!valid)
             {
                 showingRun = false;
-                runFrame = 0f;
+                runCycleTime = 0f;
                 ApplyFacing(direction);
                 return;
             }
 
             // Restart on entering Run or changing direction; physics speed is independent.
+            float duration = runCycleDuration > 0f && !float.IsInfinity(runCycleDuration)
+                ? runCycleDuration : 0.70f;
             if (!showingRun || runDirection != direction)
-                runFrame = 0f;
-            else
-                runFrame = (runFrame + deltaTime * Mathf.Max(0.01f, runFramesPerSecond)) % frames.Length;
+            {
+                runCycleTime = 0f;
+                runRestartFrame = Time.frameCount;
+            }
+            // Facing and locomotion can both notify this frame; keep the first frame visible.
+            else if (runRestartFrame != Time.frameCount)
+                runCycleTime = (float)(((double)runCycleTime + deltaTime) % duration);
             showingRun = true;
             runDirection = direction;
-            Sprite selected = frames[Mathf.Min(Mathf.FloorToInt(runFrame), frames.Length - 1)];
+            float progress = runCycleTime / duration;
+            Sprite selected = frames[Mathf.Min(Mathf.FloorToInt(progress * frames.Length), frames.Length - 1)];
             if (targetRenderer != null && targetRenderer.sprite != selected)
                 targetRenderer.sprite = selected;
         }

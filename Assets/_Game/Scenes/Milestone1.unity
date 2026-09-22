@@ -668,9 +668,9 @@ GameObject:
   - component: {fileID: 224749267}
   - component: {fileID: 224749266}
   - component: {fileID: 224749265}
-  - component: {fileID: 224749264}
   - component: {fileID: 224749263}
-  m_Layer: 0
+  - component: {fileID: 224749270}
+  m_Layer: 7
   m_Name: TargetDummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,19 +689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3838da016cb5cb4098d157201feed13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Combat.TargetDummy
---- !u!114 &224749264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224749262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1263c0ab1d13c88478d7258d00127712, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Combat.Hurtbox
-  damageReceiver: {fileID: 224749265}
 --- !u!114 &224749265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,7 +755,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.7392682}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -778,7 +765,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 0.8, y: 0.4238367}
   m_EdgeRadius: 0
 --- !u!50 &224749268
 Rigidbody2D:
@@ -788,14 +775,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224749262}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -805,8 +792,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!4 &224749269
 Transform:
   m_ObjectHideFlags: 0
@@ -821,8 +808,119 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 671784311}
+  - {fileID: 233416865}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &224749270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224749262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44de53e436145898e2567c63e2e4864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Combat.EnemyHitReaction
+  targetRenderer: {fileID: 0}
+  hitFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  hitFlashDuration: 0.1
+  knockbackDistance: 0.3
+  knockbackDuration: 0.1
+  knockbackMultiplier: 1
+--- !u!1 &233416864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233416865}
+  - component: {fileID: 233416866}
+  - component: {fileID: 233416867}
+  m_Layer: 10
+  m_Name: Hurtbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233416865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233416864}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 224749269}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &233416866
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233416864}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &233416867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233416864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1263c0ab1d13c88478d7258d00127712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Combat.Hurtbox
+  damageReceiver: {fileID: 224749265}
 --- !u!1 &316614977
 GameObject:
   m_ObjectHideFlags: 0
@@ -6349,7 +6447,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: ff94d0bfd5e467e3411ed3851dc2fb89f91a1c4di
+  m_ApplyToSortingLayers: ff94d0bfd5e467e3411ed3851dc2fb89f91a1c4d559532a27fd07f68bbfb0d31dd963f45i
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -7334,7 +7432,7 @@ GameObject:
   - component: {fileID: 1987686217}
   - component: {fileID: 1987686219}
   - component: {fileID: 1987686218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Attack Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7524,7 +7622,8 @@ GameObject:
   - component: {fileID: 923478536}
   - component: {fileID: 923478541}
   - component: {fileID: 923478540}
-  m_Layer: 0
+  - component: {fileID: 7730421050500974009}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7692,62 +7791,46 @@ MonoBehaviour:
   southWest: {fileID: 2444096963167952873, guid: e9228f30760ca80439f43e6d8c341490, type: 3}
   west: {fileID: 3045786225359738866, guid: e9228f30760ca80439f43e6d8c341490, type: 3}
   northWest: {fileID: -7012206313614243681, guid: e9228f30760ca80439f43e6d8c341490, type: 3}
-  runFramesPerSecond: 8
+  runCycleDuration: 0.7
   run_N:
   - {fileID: 5856754587435936738, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -8631778574677120575, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 6918618383255975096, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: 7586493154594097736, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: 7586493154594097736, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 7586493154594097736, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   run_NE:
   - {fileID: -6816072110364643028, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -9078508345881009543, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -8825402704745329367, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 3425546177094019780, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: 3425546177094019780, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: 3425546177094019780, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   run_E:
   - {fileID: -6115625024136843122, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -481115087910494462, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -5409574947399590327, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: -1804572041552807543, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: -1804572041552807543, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -1804572041552807543, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   run_SE:
   - {fileID: 8340030752983359280, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 1994824818857186036, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -7347791771075484208, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 6408512015798539493, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: 6408512015798539493, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: 6408512015798539493, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   run_S:
   - {fileID: -4017058768255162121, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 1443133385439379556, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 7436850893552066327, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: -6378569355458798346, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: -6378569355458798346, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -6378569355458798346, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   run_SW:
   - {fileID: 5332247412026800390, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -3353905250344322691, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 2446109060219001865, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 8829243137676115158, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: 8829243137676115158, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: 8829243137676115158, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   run_W:
   - {fileID: 476443777564660399, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -1645300228419328862, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -1311300624363652407, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -3905065760309513640, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: -3905065760309513640, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: -3905065760309513640, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   run_NW:
   - {fileID: 4657973994233237535, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -5872544832278214467, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: 466804225237603124, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: -8206871964979388889, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
-  - {fileID: -8206871964979388889, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   - {fileID: -8206871964979388889, guid: decf5156fa494e64ca9b23256dfb9b47, type: 3}
   attack_N:
   - {fileID: 2236080612301533476, guid: 6a45b4e87daa41f4fa31339633d77869, type: 3}
@@ -7770,8 +7853,6 @@ MonoBehaviour:
   - {fileID: -1199853845131187601, guid: 30daa35052ed376449ff950cb9754445, type: 3}
   - {fileID: -687064309930572859, guid: 30daa35052ed376449ff950cb9754445, type: 3}
   - {fileID: -2543093737583386502, guid: 30daa35052ed376449ff950cb9754445, type: 3}
-  - {fileID: 8922697633660523732, guid: 30daa35052ed376449ff950cb9754445, type: 3}
-  - {fileID: 7431204133918834143, guid: 30daa35052ed376449ff950cb9754445, type: 3}
   attack_SE:
   - {fileID: 2812900543531942424, guid: 6a45b4e87daa41f4fa31339633d77869, type: 3}
   - {fileID: -5430809912117449109, guid: 6a45b4e87daa41f4fa31339633d77869, type: 3}
@@ -7841,6 +7922,43 @@ Transform:
   - {fileID: 149349245}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &7730421050500974009
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139826124043018410}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.03076142, y: 0}
+  m_Size: {x: 0.4, y: 0.3}
+  m_Direction: 0
 --- !u!212 &8561696853344346507
 SpriteRenderer:
   serializedVersion: 3

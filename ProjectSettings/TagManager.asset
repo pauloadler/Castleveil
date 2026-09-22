@@ -11,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - PlayerAttack
+  - EnemyAttack
+  - EnemyHurtbox
   - 
   - 
   - 
@@ -55,6 +55,18 @@ TagManager:
     locked: 0
   - name: VFX
     uniqueID: 1293687545
+    locked: 0
+  - name: Player
+    uniqueID: 2721224021
+    locked: 0
+  - name: Enemy
+    uniqueID: 1753206911
+    locked: 0
+  - name: PlayerAttack
+    uniqueID: 822999995
+    locked: 0
+  - name: EnemyAttack
+    uniqueID: 1161795293
     locked: 0
   m_RenderingLayers:
   - Default
