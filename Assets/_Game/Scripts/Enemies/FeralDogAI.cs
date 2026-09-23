@@ -71,6 +71,7 @@ namespace Game.Enemies
 
         private void OnDisable()
         {
+            if (visual != null) visual.SetRunning(false);
             if (health != null) health.Died -= OnDeath;
             SetIndicator(false);
             StopMovement();
@@ -139,12 +140,19 @@ namespace Game.Enemies
 
         private void SetState(State next)
         {
+            bool enteringAttack = next == State.Attack && CurrentState != State.Attack;
             CurrentState = next;
+            if (visual != null) visual.SetRunning(next == State.Chase);
             stateRemaining = next == State.Alert ? alertDuration
                 : next == State.Attack ? attackWindup
                 : next == State.Recover ? recoverDuration : 0f;
             SetIndicator(next == State.Alert);
             StopMovement();
+            if (enteringAttack && HasTarget)
+            {
+                Face((Vector2)player.transform.position - body.position);
+                if (visual != null) visual.PlayAttack();
+            }
         }
 
         private void SetIndicator(bool visible)

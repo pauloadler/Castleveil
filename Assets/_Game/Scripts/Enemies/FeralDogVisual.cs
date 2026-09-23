@@ -11,6 +11,10 @@ namespace Game.Enemies
         [SerializeField] private Sprite idleSprite;
         [SerializeField] private Sprite[] idleFrames = System.Array.Empty<Sprite>();
         [SerializeField, Min(0.01f)] private float idleCycleDuration = 1.0f;
+        [SerializeField] private Sprite[] runFrames = System.Array.Empty<Sprite>();
+        [SerializeField, Min(0.01f)] private float runCycleDuration = 0.55f;
+        [SerializeField] private Sprite[] attackFrames = System.Array.Empty<Sprite>();
+        [SerializeField, Min(0.01f)] private float attackDuration = 0.45f;
         [SerializeField] private Sprite[] hitFrames = System.Array.Empty<Sprite>();
         [SerializeField, Min(0.01f)] private float hitDuration = 0.15f;
         [SerializeField] private Sprite[] deathFrames = System.Array.Empty<Sprite>();
@@ -26,6 +30,10 @@ namespace Game.Enemies
         private float animationStartedAt;
         private float animationDuration;
         private float idleStartedAt;
+        private bool running;
+        private bool attacking;
+        private float attackStartedAt;
+        private float attackPlaybackDuration;
 
         private void Awake()
         {
@@ -58,12 +66,13 @@ namespace Game.Enemies
             health.DamageTaken -= OnDamageTaken;
             health.Died -= OnDeath;
             hitting = false;
+            attacking = false;
         }
 
         private void Synchronize()
         {
             if (health.IsDead) BeginDeath();
-            else if (!hitting) RestartIdle();
+            else if (!hitting) RestartLocomotion();
         }
 
         public void SetFacingRight(bool facingRight)
@@ -72,10 +81,31 @@ namespace Game.Enemies
                 targetRenderer.flipX = facingRight != spritesFaceRight;
         }
 
+        public void PlayAttack()
+        {
+            if (!isActiveAndEnabled || health == null || health.IsDead || dying || hitting) return;
+            if (attackFrames == null || attackFrames.Length == 0) return;
+            attacking = true;
+            attackStartedAt = Time.time;
+            attackPlaybackDuration = SafeDuration(attackDuration, 0.45f);
+            ShowFrame(attackFrames, 0f);
+        }
+
+        public void SetRunning(bool value)
+        {
+            if (running == value) return;
+            running = value;
+            if (isActiveAndEnabled && health != null && !health.IsDead
+                && !dying && !hitting && !attacking)
+                RestartLocomotion();
+        }
+
         private void OnDamageTaken(DamageInfo damage, float appliedDamage)
         {
             if (!isActiveAndEnabled || dying || health.IsDead || appliedDamage <= 0f) return;
             hitting = true;
+            // Hit cancels this visual swing; gameplay remains owned by the AI.
+            attacking = false;
             animationStartedAt = Time.time;
             animationDuration = SafeDuration(hitDuration, 0.15f);
             ShowFrame(hitFrames, 0f);
@@ -90,6 +120,7 @@ namespace Game.Enemies
         {
             if (dying) return;
             dying = true;
+            attacking = false;
             hitting = false;
             animationStartedAt = Time.time;
             animationDuration = SafeDuration(deathDuration, 0.40f);
@@ -118,22 +149,34 @@ namespace Game.Enemies
                 if (progress >= 1f)
                 {
                     hitting = false;
-                    RestartIdle();
+                    RestartLocomotion();
                 }
                 else ShowFrame(hitFrames, progress);
             }
+            else if (attacking)
+            {
+                float progress = (Time.time - attackStartedAt) / attackPlaybackDuration;
+                if (progress >= 1f)
+                {
+                    attacking = false;
+                    RestartLocomotion();
+                }
+                else ShowFrame(attackFrames, progress);
+            }
             else if (!health.IsDead)
             {
-                float duration = SafeDuration(idleCycleDuration, 1f);
+                bool useRun = running && runFrames != null && runFrames.Length > 0;
+                float duration = useRun ? SafeDuration(runCycleDuration, 0.55f)
+                    : SafeDuration(idleCycleDuration, 1f);
                 float progress = Mathf.Repeat(Time.time - idleStartedAt, duration) / duration;
-                ShowFrame(idleFrames, progress);
+                ShowFrame(useRun ? runFrames : idleFrames, progress);
             }
         }
 
-        private void RestartIdle()
+        private void RestartLocomotion()
         {
             idleStartedAt = Time.time;
-            ShowFrame(idleFrames, 0f);
+            ShowFrame(running && runFrames != null && runFrames.Length > 0 ? runFrames : idleFrames, 0f);
         }
 
         private void ShowFrame(Sprite[] frames, float progress)
