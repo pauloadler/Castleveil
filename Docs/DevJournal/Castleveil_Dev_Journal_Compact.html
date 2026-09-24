@@ -40,33 +40,27 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 <div class="meta">
 <div class="box"><div class="label">Engine</div><div class="value">Unity 6 / URP 2D</div></div>
 <div class="box"><div class="label">Tile</div><div class="value">32×32 px</div></div>
-<div class="box"><div class="label">Foco</div><div class="value">M7.2A</div></div>
+<div class="box"><div class="label">Foco</div><div class="value">M8.0</div></div>
 <div class="box"><div class="label">Arte</div><div class="value">Dark Fantasy</div></div>
 </div>
 
 <div class="update">
-<h2>Última atualização</h2>
-<ul>
+<h2>Última atualização</h2><ul>
 <li><strong>Data:</strong> 24/09/2026</li>
-<li><strong>Milestone:</strong> M7.2A — Cenário inicial</li>
-<li><strong>Status:</strong> Em andamento</li>
+<li><strong>Milestone:</strong> M8.0 — Main Menu isolado</li>
+<li><strong>Status:</strong> Em andamento / aguardando validação</li>
 <li><strong>Commit:</strong> pendente</li>
-<li><strong>Arquivos principais:</strong> Docs/DevJournal/*</li>
-<li><strong>Validação:</strong> diário criado; gameplay preservado</li>
-<li><strong>Próximo passo:</strong> testar Codex CLI com tarefa isolada</li>
-</ul>
-</div>
-
-<div class="session">
-<h2>Última sessão</h2>
-<ul>
-<li>Projeto e GitHub renomeados para Castleveil.</li>
-<li>Loot da espada validado com label, outline e sparkles.</li>
-<li>Padrão de Tilemap consolidado em 32×32 px.</li>
-<li>Diário de desenvolvimento criado para uso lateral no Codex.</li>
-</ul>
-</div>
-
+<li><strong>Arquivos principais:</strong> MainMenu.unity, MainMenuController.cs, MainMenuSetup.cs, EditorBuildSettings.asset</li>
+<li><strong>Validação:</strong> compilação C# runtime e Editor sem erros; cena gerada via Unity; GUIDs, referências internas e callbacks conferidos; Play Mode pendente.</li>
+<li><strong>Próximo passo:</strong> validar navegação, botões e carregamento de Milestone1 no Unity.</li>
+</ul></div>
+<div class="session"><h2>Última sessão</h2><ul>
+<li>Main Menu isolado com UI TMP temporária; sem alterações nos sistemas protegidos.</li>
+<li>Novo Jogo carrega Milestone1; Continuar desabilitado; Opções placeholder; Sair seguro no Editor.</li>
+<li>Gerador Editor aditivo preserva cenas abertas e não sobrescreve menu existente.</li>
+<li>Geração separada da instância aberta do Editor; ordem compartilhada de build começa no menu.</li>
+<li>Próximo passo: validação manual de Play Mode e build; M8.0 permanece em andamento.</li>
+</ul></div>
 <div class="toolbar">
 <button class="filter active" data-filter="all">Todos</button>
 <button class="filter" data-filter="done">Feitos</button>
@@ -105,14 +99,14 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 <div class="item" data-status="future"><h3>M7.2B — Cabana inicial</h3><p>Player começa dentro, sem arma, com saída clara.</p></div>
 <div class="item" data-status="future"><h3>M7.3 — Tutorial</h3><p>Cabana → espada → equip → combate.</p></div>
 <div class="item" data-status="future"><h3>M7.4 — Primeiro encontro</h3><p>Clareira + FeralDog + contexto narrativo.</p></div>
-<div class="item" data-status="future"><h3>M8 — Main Menu</h3><p>Novo Jogo, Continuar, Opções e Sair.</p></div>
+<div class="item doing" data-status="doing"><h3>M8.0 — Main Menu isolado</h3><p>Em andamento / aguardando validação. UI e fluxo implementados; validar Play Mode e build antes de concluir.</p></div>
 <div class="item" data-status="future"><h3>M9 — Save / Checkpoint</h3><p>Persistência mínima.</p></div>
 <div class="item" data-status="future"><h3>M10 — Inventário / tiers</h3><p>Raridade, stats e loot futuro.</p></div>
 </div></details>
 
 <details class="section" open><summary><span>Checklist da próxima sessão</span><span class="badge bdoing">Ação</span></summary><div class="section-body">
-<div class="check"><input type="checkbox" id="c1"><label for="c1">Testar Codex CLI no projeto Castleveil.</label></div>
-<div class="check"><input type="checkbox" id="c2"><label for="c2">Criar Main Menu isolado sem tocar em gameplay.</label></div>
+<div class="check"><input type="checkbox" id="c1"><label for="c1">Abrir MainMenu e validar botões, navegação e Novo Jogo → Milestone1.</label></div>
+<div class="check"><input type="checkbox" id="c2"><label for="c2">Confirmar MainMenu como primeira cena no Build Profile e testar Sair em build.</label></div>
 <div class="check"><input type="checkbox" id="c3"><label for="c3">Fixar HUD em Screen Space.</label></div>
 <div class="check"><input type="checkbox" id="c4"><label for="c4">Expandir Ground Tilemap.</label></div>
 </div></details>
@@ -128,6 +122,30 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 </ul></div>
 </div></details>
 
+<details class="section"><summary><span>Histórico — sessão anterior de 24/09/2026</span></summary><div class="section-body"><div class="update">
+<h2>Última atualização</h2>
+<ul>
+<li><strong>Data:</strong> 24/09/2026</li>
+<li><strong>Milestone:</strong> M7.2A — Cenário inicial</li>
+<li><strong>Status:</strong> Em andamento</li>
+<li><strong>Commit:</strong> pendente</li>
+<li><strong>Arquivos principais:</strong> Docs/DevJournal/*</li>
+<li><strong>Validação:</strong> diário criado; gameplay preservado</li>
+<li><strong>Próximo passo:</strong> testar Codex CLI com tarefa isolada</li>
+</ul>
+</div>
+
+<div class="session">
+<h2>Última sessão</h2>
+<ul>
+<li>Projeto e GitHub renomeados para Castleveil.</li>
+<li>Loot da espada validado com label, outline e sparkles.</li>
+<li>Padrão de Tilemap consolidado em 32×32 px.</li>
+<li>Diário de desenvolvimento criado para uso lateral no Codex.</li>
+</ul>
+</div>
+
+</div></details>
 <div class="footer">Castleveil Dev Journal • v2</div>
 </main>
 <script>
