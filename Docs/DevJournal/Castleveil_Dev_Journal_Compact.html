@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Castleveil — Dev Journal Compact</title>
+<style>
+:root{
+  --bg:#0d1015;--panel:#151a22;--panel2:#1b222d;--text:#ecf1f7;--muted:#8f9aaa;
+  --border:#2b3542;--done:#5dd894;--doing:#f0c96a;--paused:#c98bff;--future:#6aa8ff;
+}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}
+body{min-width:280px}header{position:sticky;top:0;z-index:10;background:rgba(13,16,21,.96);border-bottom:1px solid var(--border);padding:14px}
+.brand{display:flex;justify-content:space-between;gap:10px;align-items:center}h1{font-size:18px;margin:0}small,.muted{color:var(--muted)}
+.progress{height:7px;background:#202734;border-radius:999px;overflow:hidden;margin-top:10px}.progress span{display:block;height:100%;width:58%;background:linear-gradient(90deg,var(--done),var(--future))}
+main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:10px 0}.box{background:#131923;border:1px solid var(--border);border-radius:10px;padding:9px}
+.label{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.value{font-size:12px;font-weight:700;margin-top:3px}
+.session,.update{border:1px solid #3a4656;background:linear-gradient(180deg,#18202a,#141a22);border-radius:12px;padding:11px;margin-bottom:10px}
+.update{border-left:4px solid var(--doing)}.session h2,.update h2{font-size:13px;margin:0 0 8px}
+.session ul,.update ul{margin:0;padding-left:16px}.session li,.update li{font-size:11px;color:#cad2dc;margin:3px 0}
+.toolbar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}.filter{border:1px solid var(--border);background:#131923;color:#d9e1ea;border-radius:999px;padding:5px 9px;font-size:11px;cursor:pointer}
+.filter.active{background:#243043}.section{border:1px solid var(--border);background:var(--panel);border-radius:12px;margin:10px 0;overflow:hidden}
+.section>summary{list-style:none;cursor:pointer;padding:12px 14px;font-weight:700;font-size:13px;display:flex;justify-content:space-between;align-items:center}.section>summary::-webkit-details-marker{display:none}
+.section-body{padding:0 10px 10px}.item{border:1px solid var(--border);background:var(--panel2);border-left:4px solid var(--future);border-radius:10px;padding:10px;margin:8px 0}
+.item.done{border-left-color:var(--done)}.item.doing{border-left-color:var(--doing)}.item.paused{border-left-color:var(--paused)}
+.item h3{font-size:13px;margin:0 0 5px}.item p,.item li{font-size:11px;color:#c5ccd5;line-height:1.35}.item ul{padding-left:17px;margin:6px 0 0}
+.badge{font-size:9px;border-radius:999px;padding:3px 6px;font-weight:700}.bdone{color:var(--done);background:rgba(93,216,148,.12)}.bdoing{color:var(--doing);background:rgba(240,201,106,.12)}
+.bpaused{color:var(--paused);background:rgba(201,139,255,.12)}.bfuture{color:var(--future);background:rgba(106,168,255,.12)}
+.check{display:flex;gap:8px;align-items:flex-start;margin:5px 0}.check input{margin-top:2px;accent-color:#79b7ff}.check label{font-size:11px;color:#c7d0db;line-height:1.3}
+.hidden{display:none!important}.footer{font-size:9px;color:#6f7a88;text-align:center;padding:14px 0}code{background:#101319;border:1px solid #2b3340;padding:2px 5px;border-radius:5px}
+</style>
+</head>
+<body>
+<header>
+<div class="brand"><div><h1>Castleveil</h1><small>Dev Journal • Compact</small></div><span class="badge bdoing">Vertical Slice</span></div>
+<div class="progress"><span></span></div>
+</header>
+<main>
+
+<div class="meta">
+<div class="box"><div class="label">Engine</div><div class="value">Unity 6 / URP 2D</div></div>
+<div class="box"><div class="label">Tile</div><div class="value">32×32 px</div></div>
+<div class="box"><div class="label">Foco</div><div class="value">M7.2A</div></div>
+<div class="box"><div class="label">Arte</div><div class="value">Dark Fantasy</div></div>
+</div>
+
+<div class="update">
+<h2>Última atualização</h2>
+<ul>
+<li><strong>Data:</strong> 24/09/2026</li>
+<li><strong>Milestone:</strong> M7.2A — Cenário inicial</li>
+<li><strong>Status:</strong> Em andamento</li>
+<li><strong>Commit:</strong> pendente</li>
+<li><strong>Arquivos principais:</strong> Docs/DevJournal/*</li>
+<li><strong>Validação:</strong> diário criado; gameplay preservado</li>
+<li><strong>Próximo passo:</strong> testar Codex CLI com tarefa isolada</li>
+</ul>
+</div>
+
+<div class="session">
+<h2>Última sessão</h2>
+<ul>
+<li>Projeto e GitHub renomeados para Castleveil.</li>
+<li>Loot da espada validado com label, outline e sparkles.</li>
+<li>Padrão de Tilemap consolidado em 32×32 px.</li>
+<li>Diário de desenvolvimento criado para uso lateral no Codex.</li>
+</ul>
+</div>
+
+<div class="toolbar">
+<button class="filter active" data-filter="all">Todos</button>
+<button class="filter" data-filter="done">Feitos</button>
+<button class="filter" data-filter="doing">Andamento</button>
+<button class="filter" data-filter="paused">Pausados</button>
+<button class="filter" data-filter="future">Futuros</button>
+</div>
+
+<details class="section" open><summary><span>Em andamento</span><span class="badge bdoing">2</span></summary><div class="section-body">
+<div class="item doing" data-status="doing"><h3>M7.2A — Cenário inicial</h3><ul>
+<li>Expandir mapa.</li><li>Fixar HUD na tela.</li><li>Aplicar noite/dark fantasy.</li><li>Construir cabana inicial.</li><li>Avaliar Pixel World Ultimate como base principal.</li>
+</ul></div>
+<div class="item doing" data-status="doing"><h3>Identidade visual</h3><ul>
+<li>Pixel art dark fantasy.</li><li>Paleta fria + luzes quentes.</li><li>Capa/logo/menu como referências.</li>
+</ul></div>
+</div></details>
+
+<details class="section" open><summary><span>Concluído</span><span class="badge bdone">7 blocos</span></summary><div class="section-body">
+<div class="item done" data-status="done"><h3>M1 — Movimento e câmera</h3><p>8 direções, Rigidbody2D, Cinemachine e Input System.</p></div>
+<div class="item done" data-status="done"><h3>M2 — Stats e vida</h3><p>CharacterStats, Health, IDamageable e DamageInfo.</p></div>
+<div class="item done" data-status="done"><h3>M3 — Combate melee</h3><p>Hitbox, dano e timeline de ataque.</p></div>
+<div class="item done" data-status="done"><h3>M4 — Dodge / stamina / HUD</h3><p>Dodge, stamina, invulnerabilidade e HUD funcional.</p></div>
+<div class="item done" data-status="done"><h3>M5 — Feedback de combate</h3><p>Hit reaction, knockback, hit stop, VFX e barra de vida.</p></div>
+<div class="item done" data-status="done"><h3>M6 — FeralDog</h3><p>AI completa + idle/run/attack/hit/death/alert.</p></div>
+<div class="item done" data-status="done"><h3>M7.1 — Loot / espada</h3><p>WorldItem, label clicável, arrow, highlight, sparkles e equip.</p></div>
+</div></details>
+
+<details class="section"><summary><span>Pausados</span><span class="badge bpaused">4</span></summary><div class="section-body">
+<div class="item paused" data-status="paused"><h3>Idle respirando do Player</h3><p>Adicionar animação de respiração mais viva.</p></div>
+<div class="item paused" data-status="paused"><h3>Equipamentos completos</h3><p>Inventário, slots, raridade e stats.</p></div>
+<div class="item paused" data-status="paused"><h3>Refino do FeralDog</h3><p>LOS, ranges e pivôs.</p></div>
+<div class="item paused" data-status="paused"><h3>Loot label definitiva</h3><p>Atual serve; revisar futuramente.</p></div>
+</div></details>
+
+<details class="section"><summary><span>Roadmap</span><span class="badge bfuture">Próximos</span></summary><div class="section-body">
+<div class="item" data-status="future"><h3>M7.2B — Cabana inicial</h3><p>Player começa dentro, sem arma, com saída clara.</p></div>
+<div class="item" data-status="future"><h3>M7.3 — Tutorial</h3><p>Cabana → espada → equip → combate.</p></div>
+<div class="item" data-status="future"><h3>M7.4 — Primeiro encontro</h3><p>Clareira + FeralDog + contexto narrativo.</p></div>
+<div class="item" data-status="future"><h3>M8 — Main Menu</h3><p>Novo Jogo, Continuar, Opções e Sair.</p></div>
+<div class="item" data-status="future"><h3>M9 — Save / Checkpoint</h3><p>Persistência mínima.</p></div>
+<div class="item" data-status="future"><h3>M10 — Inventário / tiers</h3><p>Raridade, stats e loot futuro.</p></div>
+</div></details>
+
+<details class="section" open><summary><span>Checklist da próxima sessão</span><span class="badge bdoing">Ação</span></summary><div class="section-body">
+<div class="check"><input type="checkbox" id="c1"><label for="c1">Testar Codex CLI no projeto Castleveil.</label></div>
+<div class="check"><input type="checkbox" id="c2"><label for="c2">Criar Main Menu isolado sem tocar em gameplay.</label></div>
+<div class="check"><input type="checkbox" id="c3"><label for="c3">Fixar HUD em Screen Space.</label></div>
+<div class="check"><input type="checkbox" id="c4"><label for="c4">Expandir Ground Tilemap.</label></div>
+</div></details>
+
+<details class="section"><summary><span>Regras para Codex / CLI</span><span class="badge bdoing">Proteção</span></summary><div class="section-body">
+<div class="item doing" data-status="doing"><ul>
+<li>Preservar sistemas funcionando.</li>
+<li><strong>ADD &gt; MODIFY &gt; REFACTOR</strong>.</li>
+<li>Não refatorar sem autorização.</li>
+<li>Não renomear campos serializados/classes/GameObjects sem necessidade.</li>
+<li>Checkpoint no Git antes de milestones grandes.</li>
+<li>Atualizar diário conforme <code>UPDATE_RULES.md</code>.</li>
+</ul></div>
+</div></details>
+
+<div class="footer">Castleveil Dev Journal • v2</div>
+</main>
+<script>
+const buttons=document.querySelectorAll('.filter'),items=document.querySelectorAll('.item[data-status]');
+buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;items.forEach(it=>it.classList.toggle('hidden',!(f==='all'||it.dataset.status===f)));}));
+</script>
+</body>
+</html>
