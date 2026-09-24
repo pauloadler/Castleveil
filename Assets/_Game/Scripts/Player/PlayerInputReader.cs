@@ -13,7 +13,10 @@ namespace Game.Player
         private InputAction pointerAction;
         private InputAction basicAttackAction;
         private InputAction dodgeAction;
+        private InputAction interactAction;
         private bool hasFocus = true;
+        private int consumedAttackFrame = -1;
+        public void ConsumePrimaryClick() => consumedAttackFrame = Time.frameCount;
 
         public Vector2 MoveInput => isActiveAndEnabled && hasFocus && moveAction != null
             ? Vector2.ClampMagnitude(moveAction.ReadValue<Vector2>(), 1f) : Vector2.zero;
@@ -22,9 +25,11 @@ namespace Game.Player
         public bool HasPointer => isActiveAndEnabled && hasFocus && pointerAction != null
             && pointerAction.enabled && pointerAction.controls.Count > 0;
         public bool BasicAttackPressedThisFrame => isActiveAndEnabled && hasFocus
-            && basicAttackAction != null && basicAttackAction.WasPressedThisFrame();
+            && consumedAttackFrame != Time.frameCount && basicAttackAction != null && basicAttackAction.WasPressedThisFrame();
         public bool DodgePressedThisFrame => isActiveAndEnabled && hasFocus
             && dodgeAction != null && dodgeAction.WasPressedThisFrame();
+        public bool InteractPressedThisFrame => isActiveAndEnabled && hasFocus
+            && interactAction != null && interactAction.WasPressedThisFrame();
 
         private void OnEnable()
         {
@@ -41,6 +46,7 @@ namespace Game.Player
             pointerAction = runtimeActions.FindAction("Player/Pointer", true);
             basicAttackAction = runtimeActions.FindAction("Player/BasicAttack");
             dodgeAction = runtimeActions.FindAction("Player/Dodge");
+            interactAction = runtimeActions.FindAction("Player/Interact");
             runtimeActions.Enable();
         }
 
@@ -56,6 +62,7 @@ namespace Game.Player
             pointerAction = null;
             basicAttackAction = null;
             dodgeAction = null;
+            interactAction = null;
         }
 
         private void OnApplicationFocus(bool focused) => hasFocus = focused;

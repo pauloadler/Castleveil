@@ -66,6 +66,14 @@
           "isPartOfComposite": false,
           "id": "df6de25a-78a6-43de-b2b5-995859635fbf",
           "action": "Dodge"
+        },
+        {
+          "path": "<Keyboard>/e",
+          "isComposite": false,
+          "name": "",
+          "isPartOfComposite": false,
+          "id": "1995f88f-441a-48a1-9c74-6f0c4f7ce2d4",
+          "action": "Interact"
         }
       ],
       "name": "Player",
@@ -95,6 +103,13 @@
           "type": "Button",
           "id": "73bdc6a0-5dd9-49be-bf3a-d108146df2c4",
           "name": "Dodge",
+          "initialStateCheck": false,
+          "expectedControlType": "Button"
+        },
+        {
+          "type": "Button",
+          "id": "040fc3df-5eab-4267-9bf1-6cceb502842c",
+          "name": "Interact",
           "initialStateCheck": false,
           "expectedControlType": "Button"
         }

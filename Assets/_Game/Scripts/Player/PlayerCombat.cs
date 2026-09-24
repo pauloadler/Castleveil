@@ -23,6 +23,7 @@ namespace Game.Player
         private CharacterStats stats;
         private Health health;
         private PlayerDodge dodge;
+        private PlayerEquipment equipment;
         private bool attackRequested;
         private Vector2 attackDirection;
         private float nextAttackTime;
@@ -43,6 +44,7 @@ namespace Game.Player
             stats = GetComponent<CharacterStats>();
             health = GetComponent<Health>();
             dodge = GetComponent<PlayerDodge>();
+            equipment = GetComponent<PlayerEquipment>();
             if (attackHitbox == null)
             {
                 Debug.LogError("Assign the player's Attack Hitbox to PlayerCombat.", this);
@@ -62,7 +64,7 @@ namespace Game.Player
         private void LateUpdate()
         {
             // Movement has already resolved this frame's mouse-facing direction.
-            if (input.BasicAttackPressedThisFrame && !health.IsDead
+            if (equipment != null && equipment.HasWeapon && input.BasicAttackPressedThisFrame && !health.IsDead
                 && (dodge == null || !dodge.IsDodging)
                 && !IsAttacking && !attackHitbox.IsActive && Time.time >= nextAttackTime)
             {
@@ -73,7 +75,7 @@ namespace Game.Player
 
         private void FixedUpdate()
         {
-            if (health.IsDead || (dodge != null && dodge.IsDodging))
+            if (equipment == null || !equipment.HasWeapon || health.IsDead || (dodge != null && dodge.IsDodging))
             {
                 CancelAttack();
                 return;

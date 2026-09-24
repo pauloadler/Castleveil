@@ -1,52 +1,16 @@
 fileFormatVersion: 2
-guid: 4acf052dac40a7c488e8246cfa4d162a
+guid: 09145316f625aa84fa9efa250d3a567a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4068340222830919944
-    second: impact_vfx_0
+      213: -8604400649249154807
+    second: triple_shine_0
   - first:
-      213: -4095357580010478123
-    second: impact_vfx_1
+      213: 5479601865145848533
+    second: triple_shine_1
   - first:
-      213: 2330191702971327077
-    second: impact_vfx_2
-  - first:
-      213: 4077702702960330559
-    second: impact_vfx_3
-  - first:
-      213: 1189902920413425794
-    second: impact_vfx_4
-  - first:
-      213: 4803342415912323565
-    second: impact_vfx_5
-  - first:
-      213: 2298967833410376392
-    second: impact_vfx_6
-  - first:
-      213: -1202845695389769491
-    second: impact_vfx_7
-  - first:
-      213: -2647570048881355910
-    second: impact_vfx_8
-  - first:
-      213: 1569742094332289546
-    second: impact_vfx_9
-  - first:
-      213: 4225286627251836270
-    second: impact_vfx_10
-  - first:
-      213: 6666795112764047515
-    second: impact_vfx_11
-  - first:
-      213: 2065815724930879637
-    second: impact_vfx_12
-  - first:
-      213: 294209181153560185
-    second: impact_vfx_13
-  - first:
-      213: 9170731037847807596
-    second: impact_vfx_14
+      213: 3692854609213395700
+    second: triple_shine_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,7 +57,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,12 +121,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: impact_vfx_0
+      name: triple_shine_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 655
+        width: 800
         height: 724
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -172,19 +136,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8febab05f1a5a87c0800000000000000
-      internalID: -4068340222830919944
+      spriteID: 9091d549237079880800000000000000
+      internalID: -8604400649249154807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impact_vfx_1
+      name: triple_shine_1
       rect:
         serializedVersion: 2
-        x: 656
+        x: 800
         y: 0
-        width: 853
+        width: 647
         height: 724
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -194,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d5a547aafd5a27c0800000000000000
-      internalID: -4095357580010478123
+      spriteID: 5d2169a3dd47b0c40800000000000000
+      internalID: 5479601865145848533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impact_vfx_2
+      name: triple_shine_2
       rect:
         serializedVersion: 2
-        x: 1509
+        x: 1448
         y: 0
-        width: 663
+        width: 724
         height: 724
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -216,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5622b2a0201865020800000000000000
-      internalID: 2330191702971327077
+      spriteID: 4f2145593b7af3330800000000000000
+      internalID: 3692854609213395700
       vertices: []
       indices: 
       edges: []
@@ -226,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1259ef3cb9984c14d94e2ecdb4516ff8
+    spriteID: 72c1a31b05e1e324d9f1f8459ab7eae9
     internalID: 0
     vertices: []
     indices: 
@@ -238,9 +202,9 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":724.0,"y":724.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      impact_vfx_0: -4068340222830919944
-      impact_vfx_1: -4095357580010478123
-      impact_vfx_2: 2330191702971327077
+      triple_shine_0: -8604400649249154807
+      triple_shine_1: 5479601865145848533
+      triple_shine_2: 3692854609213395700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
