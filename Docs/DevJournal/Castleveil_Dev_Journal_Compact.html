@@ -40,26 +40,26 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 <div class="meta">
 <div class="box"><div class="label">Engine</div><div class="value">Unity 6 / URP 2D</div></div>
 <div class="box"><div class="label">Tile</div><div class="value">32×32 px</div></div>
-<div class="box"><div class="label">Foco</div><div class="value">M8.0</div></div>
+<div class="box"><div class="label">Foco</div><div class="value">M7.2A</div></div>
 <div class="box"><div class="label">Arte</div><div class="value">Dark Fantasy</div></div>
 </div>
 
 <div class="update">
 <h2>Última atualização</h2><ul>
-<li><strong>Data:</strong> 24/09/2026</li>
-<li><strong>Milestone:</strong> M8.0 — Main Menu isolado</li>
-<li><strong>Status:</strong> Em andamento / aguardando validação</li>
+<li><strong>Data:</strong> 25/09/2026</li>
+<li><strong>Milestone:</strong> M7.2A — Cenário inicial em blockout</li>
+<li><strong>Status:</strong> Em andamento / aguardando validação manual</li>
 <li><strong>Commit:</strong> pendente</li>
-<li><strong>Arquivos principais:</strong> MainMenu.unity, MainMenuController.cs, MainMenuSetup.cs, EditorBuildSettings.asset</li>
-<li><strong>Validação:</strong> compilação C# runtime e Editor sem erros; cena gerada via Unity; GUIDs, referências internas e callbacks conferidos; Play Mode pendente.</li>
-<li><strong>Próximo passo:</strong> validar navegação, botões e carregamento de Milestone1 no Unity.</li>
+<li><strong>Arquivos principais:</strong> InitialMapSetup.cs, Milestone1.unity, Art/Environment/InitialArea/*.asset</li>
+<li><strong>Validação:</strong> runtime e Editor compilados; geração e verificações Unity em cópia temporária concluídas; resultado aplicado à Milestone1 real após conferir a base por hash. Referências resolvidas; componentes protegidos preservados. Play Mode pendente.</li>
+<li><strong>Próximo passo:</strong> reabrir Milestone1 e testar percurso, colisões, pickup, combate, HUD e iluminação no Play Mode.</li>
 </ul></div>
 <div class="session"><h2>Última sessão</h2><ul>
-<li>Main Menu isolado com UI TMP temporária; sem alterações nos sistemas protegidos.</li>
-<li>Novo Jogo carrega Milestone1; Continuar desabilitado; Opções placeholder; Sair seguro no Editor.</li>
-<li>Gerador Editor aditivo preserva cenas abertas e não sobrescreve menu existente.</li>
-<li>Geração separada da instância aberta do Editor; ordem compartilhada de build começa no menu.</li>
-<li>Próximo passo: validação manual de Play Mode e build; M8.0 permanece em andamento.</li>
+<li>Retomado InitialMapSetup existente, sem reiniciar a implementação ou refatorar gameplay.</li>
+<li>Aplicado blockout de aproximadamente 40×25 células, com Ground DarkForest e margem visual, caminho principal, vegetação e ruínas a nordeste.</li>
+<li>Reserva aberta de 8×6 para cabana; Player (-6,-5), espada (1,-4) e FeralDog (3,2) mantidos.</li>
+<li>HUD Overlay e referências conferidos; Global Light 2D com intensidade 0.72 e tom frio. ThirdParty e sistemas protegidos intactos.</li>
+<li>Próximo passo: validação manual. Live reload do Journal continua pendente; nenhuma infraestrutura criada.</li>
 </ul></div>
 <div class="toolbar">
 <button class="filter active" data-filter="all">Todos</button>
@@ -70,15 +70,13 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 </div>
 
 <details class="section" open><summary><span>Em andamento</span><span class="badge bdoing">2</span></summary><div class="section-body">
-<div class="item doing" data-status="doing"><h3>M7.2A — Cenário inicial</h3><ul>
-<li>Expandir mapa.</li><li>Fixar HUD na tela.</li><li>Aplicar noite/dark fantasy.</li><li>Construir cabana inicial.</li><li>Avaliar Pixel World Ultimate como base principal.</li>
-</ul></div>
+<div class="item doing" data-status="doing"><h3>M7.2A — Cenário inicial</h3><p>Em andamento / aguardando validação manual. Blockout aplicado à Milestone1 real: quatro Tilemaps, floresta, ruínas, caminho de 3 células, reserva da cabana e clareira de combate. HUD Overlay conferido e luz noturna configurada. Cabana final permanece em M7.2B.</p></div>
 <div class="item doing" data-status="doing"><h3>Identidade visual</h3><ul>
 <li>Pixel art dark fantasy.</li><li>Paleta fria + luzes quentes.</li><li>Capa/logo/menu como referências.</li>
 </ul></div>
 </div></details>
 
-<details class="section" open><summary><span>Concluído</span><span class="badge bdone">7 blocos</span></summary><div class="section-body">
+<details class="section" open><summary><span>Concluído</span><span class="badge bdone">8 blocos</span></summary><div class="section-body">
 <div class="item done" data-status="done"><h3>M1 — Movimento e câmera</h3><p>8 direções, Rigidbody2D, Cinemachine e Input System.</p></div>
 <div class="item done" data-status="done"><h3>M2 — Stats e vida</h3><p>CharacterStats, Health, IDamageable e DamageInfo.</p></div>
 <div class="item done" data-status="done"><h3>M3 — Combate melee</h3><p>Hitbox, dano e timeline de ataque.</p></div>
@@ -86,6 +84,7 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 <div class="item done" data-status="done"><h3>M5 — Feedback de combate</h3><p>Hit reaction, knockback, hit stop, VFX e barra de vida.</p></div>
 <div class="item done" data-status="done"><h3>M6 — FeralDog</h3><p>AI completa + idle/run/attack/hit/death/alert.</p></div>
 <div class="item done" data-status="done"><h3>M7.1 — Loot / espada</h3><p>WorldItem, label clicável, arrow, highlight, sparkles e equip.</p></div>
+<div class="item done" data-status="done"><h3>M8.0 — Main Menu isolado</h3><p>Concluído em 24/09/2026 após validação manual em Play Mode pelo usuário. Novo Jogo → Milestone1; Continuar desabilitado; Opções placeholder; Sair seguro no Editor. MainMenu.unity, MainMenuController.cs, MainMenuSetup.cs e EditorBuildSettings.asset; gameplay preservado.</p></div>
 </div></details>
 
 <details class="section"><summary><span>Pausados</span><span class="badge bpaused">4</span></summary><div class="section-body">
@@ -99,16 +98,15 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 <div class="item" data-status="future"><h3>M7.2B — Cabana inicial</h3><p>Player começa dentro, sem arma, com saída clara.</p></div>
 <div class="item" data-status="future"><h3>M7.3 — Tutorial</h3><p>Cabana → espada → equip → combate.</p></div>
 <div class="item" data-status="future"><h3>M7.4 — Primeiro encontro</h3><p>Clareira + FeralDog + contexto narrativo.</p></div>
-<div class="item doing" data-status="doing"><h3>M8.0 — Main Menu isolado</h3><p>Em andamento / aguardando validação. UI e fluxo implementados; validar Play Mode e build antes de concluir.</p></div>
 <div class="item" data-status="future"><h3>M9 — Save / Checkpoint</h3><p>Persistência mínima.</p></div>
 <div class="item" data-status="future"><h3>M10 — Inventário / tiers</h3><p>Raridade, stats e loot futuro.</p></div>
 </div></details>
 
 <details class="section" open><summary><span>Checklist da próxima sessão</span><span class="badge bdoing">Ação</span></summary><div class="section-body">
-<div class="check"><input type="checkbox" id="c1"><label for="c1">Abrir MainMenu e validar botões, navegação e Novo Jogo → Milestone1.</label></div>
 <div class="check"><input type="checkbox" id="c2"><label for="c2">Confirmar MainMenu como primeira cena no Build Profile e testar Sair em build.</label></div>
-<div class="check"><input type="checkbox" id="c3"><label for="c3">Fixar HUD em Screen Space.</label></div>
-<div class="check"><input type="checkbox" id="c4"><label for="c4">Expandir Ground Tilemap.</label></div>
+<div class="check"><input type="checkbox" id="c3"><label for="c3">Testar HUD fixo, leitura noturna e ausência de vazios de terreno nas bordas da câmera.</label></div>
+<div class="check"><input type="checkbox" id="c4"><label for="c4">Percorrer cabana → espada → FeralDog; testar pickup, combate, dodge e colisões de árvores/ruínas/bordas.</label></div>
+<div class="check"><input type="checkbox" id="m72validate"><label for="m72validate">Reabrir Milestone1 e executar Tools &gt; Castleveil &gt; Validate Initial Area; confirmar M7.2A somente após Play Mode.</label></div>
 </div></details>
 
 <details class="section"><summary><span>Regras para Codex / CLI</span><span class="badge bdoing">Proteção</span></summary><div class="section-body">
@@ -146,6 +144,27 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 </div>
 
 </div></details>
+<details class="section"><summary><span>Histórico — fechamento M8.0 e plano anterior de M7.2A</span></summary><div class="section-body"><div class="update">
+<h2>Última atualização</h2><ul>
+<li><strong>Data:</strong> 24/09/2026</li>
+<li><strong>Milestone:</strong> M8.0 — Main Menu isolado</li>
+<li><strong>Status:</strong> Concluído</li>
+<li><strong>Commit:</strong> pendente</li>
+<li><strong>Arquivos principais:</strong> MainMenu.unity, MainMenuController.cs, MainMenuSetup.cs, EditorBuildSettings.asset</li>
+<li><strong>Validação:</strong> compilação C# runtime e Editor sem erros; cena gerada via Unity; GUIDs, referências internas e callbacks conferidos; Play Mode validado manualmente pelo usuário em 24/09/2026, com funcionamento conforme esperado.</li>
+<li><strong>Próximo passo:</strong> testar o fluxo em build e retomar o checklist do cenário inicial.</li>
+</ul></div>
+<div class="session"><h2>Última sessão</h2><ul>
+<li>Main Menu isolado com UI TMP temporária; sem alterações nos sistemas protegidos.</li>
+<li>Novo Jogo carrega Milestone1; Continuar desabilitado; Opções placeholder; Sair seguro no Editor.</li>
+<li>Gerador Editor aditivo preserva cenas abertas e não sobrescreve menu existente.</li>
+<li>Geração separada da instância aberta do Editor; ordem compartilhada de build começa no menu.</li>
+<li>Play Mode validado manualmente pelo usuário: Main Menu funcionou conforme esperado; M8.0 concluído.</li>
+<li>Próximo passo: testar Sair e cena inicial em build; retomar o cenário inicial.</li>
+</ul></div>
+<p class="muted">Plano anterior de M7.2A:</p><div class="item"><h3>M7.2A — Cenário inicial</h3><ul>
+<li>Expandir mapa.</li><li>Fixar HUD na tela.</li><li>Aplicar noite/dark fantasy.</li><li>Construir cabana inicial.</li><li>Avaliar Pixel World Ultimate como base principal.</li>
+</ul></div></div></details>
 <div class="footer">Castleveil Dev Journal • v2</div>
 </main>
 <script>
