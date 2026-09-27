@@ -1,5 +1,7 @@
 using Game.Combat;
-
+using System;
+using Game.Combat;
+using UnityEngine;
 using UnityEngine;
 
 namespace Game.Player
@@ -11,6 +13,7 @@ namespace Game.Player
         [SerializeField] private GameObject weaponVisual;
 
         private Health health;
+        public event Action EquipmentChanged;
 
         public bool HasWeapon { get; private set; }
         public bool CanEquip => isActiveAndEnabled && health != null && !health.IsDead && !HasWeapon;
@@ -31,8 +34,14 @@ namespace Game.Player
         public bool EquipWeapon()
         {
             if (!CanEquip) return false;
+
             HasWeapon = true;
-            if (weaponVisual != null) weaponVisual.SetActive(true);
+
+            if (weaponVisual != null)
+                weaponVisual.SetActive(true);
+
+            EquipmentChanged?.Invoke();
+
             return true;
         }
 

@@ -9,7 +9,8 @@ namespace Game.Player
     {
         [SerializeField] private PlayerAnimationController facingSource;
         [SerializeField] private SpriteRenderer targetRenderer;
-        [Header("Idle")]
+        [SerializeField] private PlayerEquipment equipment;
+        [Header("Unarmed Idle")]
         [SerializeField] private Sprite north;
         [SerializeField] private Sprite northEast;
         [SerializeField] private Sprite east;
@@ -18,6 +19,16 @@ namespace Game.Player
         [SerializeField] private Sprite southWest;
         [SerializeField] private Sprite west;
         [SerializeField] private Sprite northWest;
+
+        [Header("Sword Idle")]
+        [SerializeField] private Sprite swordNorth;
+        [SerializeField] private Sprite swordNorthEast;
+        [SerializeField] private Sprite swordEast;
+        [SerializeField] private Sprite swordSouthEast;
+        [SerializeField] private Sprite swordSouth;
+        [SerializeField] private Sprite swordSouthWest;
+        [SerializeField] private Sprite swordWest;
+        [SerializeField] private Sprite swordNorthWest;
 
         [Header("Run frames (looping playback order)")]
         [Tooltip("Seconds per complete Run loop. Invalid values use 0.70 seconds.")]
@@ -42,6 +53,8 @@ namespace Game.Player
         [SerializeField] private Sprite[] attack_NW = System.Array.Empty<Sprite>();
 
         private PlayerAnimationController subscribedSource;
+        private PlayerEquipment subscribedEquipment;
+        private bool hasSwordIdle;
         private bool showingAttack;
         private bool showingRun;
         private Direction8 runDirection;
@@ -50,6 +63,7 @@ namespace Game.Player
 
         private void Awake()
         {
+            if (equipment == null) equipment = GetComponentInParent<PlayerEquipment>();
             if (targetRenderer == null)
                 targetRenderer = GetComponent<SpriteRenderer>();
             if (facingSource == null)
@@ -65,6 +79,9 @@ namespace Game.Player
                 return;
             }
 
+            subscribedEquipment = equipment;
+            if (subscribedEquipment != null) subscribedEquipment.EquipmentChanged += RefreshEquipment;
+            hasSwordIdle = subscribedEquipment != null && subscribedEquipment.HasWeapon;
             subscribedSource = facingSource;
             subscribedSource.FacingChanged += SetDirection;
             subscribedSource.AttackVisualUpdated += RefreshAttack;
@@ -84,6 +101,8 @@ namespace Game.Player
 
         private void OnDisable()
         {
+            if (subscribedEquipment != null) subscribedEquipment.EquipmentChanged -= RefreshEquipment;
+            subscribedEquipment = null;
             if (subscribedSource != null)
             {
                 subscribedSource.FacingChanged -= SetDirection;
@@ -96,6 +115,13 @@ namespace Game.Player
             showingRun = false;
             runCycleTime = 0f;
             subscribedSource = null;
+        }
+
+        private void RefreshEquipment()
+        {
+            hasSwordIdle = subscribedEquipment != null && subscribedEquipment.HasWeapon;
+            if (!showingAttack && !showingRun && facingSource != null)
+                ApplyFacing(facingSource.Facing);
         }
 
         public void SetDirection(Direction8 direction)
@@ -205,22 +231,26 @@ namespace Game.Player
 
         private void ApplyFacing(Direction8 direction)
         {
-            Sprite selected;
-            switch (direction)
-            {
-                case Direction8.North: selected = north; break;
-                case Direction8.NorthEast: selected = northEast; break;
-                case Direction8.East: selected = east; break;
-                case Direction8.SouthEast: selected = southEast; break;
-                case Direction8.South: selected = south; break;
-                case Direction8.SouthWest: selected = southWest; break;
-                case Direction8.West: selected = west; break;
-                case Direction8.NorthWest: selected = northWest; break;
-                default: return;
-            }
-
+            Sprite selected = GetIdleSprite(direction, hasSwordIdle);
             if (targetRenderer != null && selected != null && targetRenderer.sprite != selected)
                 targetRenderer.sprite = selected;
+        }
+
+        private Sprite GetIdleSprite(Direction8 direction, bool armed)
+        {
+            // Missing sword art falls back to the established unarmed idle.
+            switch (direction)
+            {
+                case Direction8.North: return armed && swordNorth != null ? swordNorth : north;
+                case Direction8.NorthEast: return armed && swordNorthEast != null ? swordNorthEast : northEast;
+                case Direction8.East: return armed && swordEast != null ? swordEast : east;
+                case Direction8.SouthEast: return armed && swordSouthEast != null ? swordSouthEast : southEast;
+                case Direction8.South: return armed && swordSouth != null ? swordSouth : south;
+                case Direction8.SouthWest: return armed && swordSouthWest != null ? swordSouthWest : southWest;
+                case Direction8.West: return armed && swordWest != null ? swordWest : west;
+                case Direction8.NorthWest: return armed && swordNorthWest != null ? swordNorthWest : northWest;
+                default: return null;
+            }
         }
     }
 }

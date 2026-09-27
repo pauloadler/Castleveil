@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: 5681f8873cdd9284cabb7327f36c902a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1247270196889100535
+    second: Errante_Idle_8Dir_Sword_0
+  - first:
+      213: 4485512614012371573
+    second: Errante_Idle_8Dir_Sword_1
+  - first:
+      213: -3035158138147409395
+    second: Errante_Idle_8Dir_Sword_2
+  - first:
+      213: -716700830414176879
+    second: Errante_Idle_8Dir_Sword_3
+  - first:
+      213: 6871061698862563861
+    second: Errante_Idle_8Dir_Sword_4
+  - first:
+      213: -4761164330690785035
+    second: Errante_Idle_8Dir_Sword_5
+  - first:
+      213: 339858248346717324
+    second: Errante_Idle_8Dir_Sword_6
+  - first:
+      213: 5797537461209555742
+    second: Errante_Idle_8Dir_Sword_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 180
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Errante_Idle_8Dir_Sword_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 265
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f5e7f3d5ec0bee0800000000000000
+      internalID: -1247270196889100535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Idle_8Dir_Sword_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 282
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572cdb905fdbf3e30800000000000000
+      internalID: 4485512614012371573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Idle_8Dir_Sword_2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 249
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02769a11c3f0e5d0800000000000000
+      internalID: -3035158138147409395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Idle_8Dir_Sword_3
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 0
+        width: 265
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d7fe85464cd06f0800000000000000
+      internalID: -716700830414176879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Idle_8Dir_Sword_4
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 0
+        width: 212
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512ce7ee53aea5f50800000000000000
+      internalID: 6871061698862563861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Idle_8Dir_Sword_5
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 0
+        width: 291
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f05ae75442fcedb0800000000000000
+      internalID: -4761164330690785035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Idle_8Dir_Sword_6
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 0
+        width: 292
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c41b6b64b67b400800000000000000
+      internalID: 339858248346717324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Errante_Idle_8Dir_Sword_7
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 0
+        width: 265
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e136a63ba9df47050800000000000000
+      internalID: 5797537461209555742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2f5ea15182fd8ce45ab502eea92bb437
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":265.0,"y":402.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Errante_Idle_8Dir_Sword_0: -1247270196889100535
+      Errante_Idle_8Dir_Sword_1: 4485512614012371573
+      Errante_Idle_8Dir_Sword_2: -3035158138147409395
+      Errante_Idle_8Dir_Sword_3: -716700830414176879
+      Errante_Idle_8Dir_Sword_4: 6871061698862563861
+      Errante_Idle_8Dir_Sword_5: -4761164330690785035
+      Errante_Idle_8Dir_Sword_6: 339858248346717324
+      Errante_Idle_8Dir_Sword_7: 5797537461209555742
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

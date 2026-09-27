@@ -1,0 +1,58 @@
+{
+  "width": 1448,
+  "height": 1086,
+  "sourceSha256": "584cbb99305ccfd7120da22938fb85028928c428f0bc4d9fb7e98058c960b2c2",
+  "parts": [
+    {
+      "path": "Logo/castleveil_logo.png",
+      "x": 40,
+      "y": 40,
+      "width": 615,
+      "height": 368
+    },
+    {
+      "path": "Buttons/button_start.png",
+      "x": 65,
+      "y": 434,
+      "width": 522,
+      "height": 99
+    },
+    {
+      "path": "Buttons/button_continue.png",
+      "x": 89,
+      "y": 538,
+      "width": 474,
+      "height": 86
+    },
+    {
+      "path": "Buttons/button_options.png",
+      "x": 89,
+      "y": 631,
+      "width": 474,
+      "height": 85
+    },
+    {
+      "path": "Buttons/button_exit.png",
+      "x": 120,
+      "y": 722,
+      "width": 412,
+      "height": 88
+    },
+    {
+      "path": "Character/menu_character.png",
+      "x": 865,
+      "y": 600,
+      "width": 400,
+      "height": 378
+    },
+    {
+      "path": "Fire/campfire_00.png",
+      "x": 575,
+      "y": 632,
+      "width": 321,
+      "height": 346
+    }
+  ],
+  "fireFrameCount": 12,
+  "fireFramesPerSecond": 10
+}
