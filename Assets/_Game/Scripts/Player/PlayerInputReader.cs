@@ -14,6 +14,8 @@ namespace Game.Player
         private InputAction basicAttackAction;
         private InputAction dodgeAction;
         private InputAction interactAction;
+        private InputAction inventoryAction;
+        public event System.Action InventoryRequested;
         private bool hasFocus = true;
         private int consumedAttackFrame = -1;
         public void ConsumePrimaryClick() => consumedAttackFrame = Time.frameCount;
@@ -47,6 +49,8 @@ namespace Game.Player
             basicAttackAction = runtimeActions.FindAction("Player/BasicAttack");
             dodgeAction = runtimeActions.FindAction("Player/Dodge");
             interactAction = runtimeActions.FindAction("Player/Interact");
+            inventoryAction = runtimeActions.FindAction("Player/Inventory");
+            if (inventoryAction != null) inventoryAction.performed += OnInventory;
             runtimeActions.Enable();
         }
 
@@ -54,6 +58,7 @@ namespace Game.Player
         {
             if (runtimeActions != null)
             {
+                if (inventoryAction != null) inventoryAction.performed -= OnInventory;
                 runtimeActions.Disable();
                 Destroy(runtimeActions);
             }
@@ -63,6 +68,12 @@ namespace Game.Player
             basicAttackAction = null;
             dodgeAction = null;
             interactAction = null;
+            inventoryAction = null;
+        }
+
+        private void OnInventory(InputAction.CallbackContext context)
+        {
+            if (isActiveAndEnabled && hasFocus) InventoryRequested?.Invoke();
         }
 
         private void OnApplicationFocus(bool focused) => hasFocus = focused;

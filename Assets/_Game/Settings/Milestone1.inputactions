@@ -1,121 +1,185 @@
 {
-  "maps": [
-    {
-      "id": "85037030-363a-4cc7-9c20-afd17446ea1a",
-      "bindings": [
+    "version": 1,
+    "name": "Milestone1",
+    "maps": [
         {
-          "path": "2DVector",
-          "isComposite": true,
-          "name": "WASD",
-          "isPartOfComposite": false,
-          "id": "563dbf8b-630d-49a7-80c0-30d264cf0a6c",
-          "action": "Move"
-        },
-        {
-          "path": "<Keyboard>/w",
-          "isComposite": false,
-          "name": "up",
-          "isPartOfComposite": true,
-          "id": "7d1def05-4af5-4e36-8ddb-b5685d55b58e",
-          "action": "Move"
-        },
-        {
-          "path": "<Keyboard>/s",
-          "isComposite": false,
-          "name": "down",
-          "isPartOfComposite": true,
-          "id": "a3fc9aef-7c51-4fc1-858d-6801b2ab725f",
-          "action": "Move"
-        },
-        {
-          "path": "<Keyboard>/a",
-          "isComposite": false,
-          "name": "left",
-          "isPartOfComposite": true,
-          "id": "a87db9bb-48ca-4df3-92e0-a01eb2d60cda",
-          "action": "Move"
-        },
-        {
-          "path": "<Keyboard>/d",
-          "isComposite": false,
-          "name": "right",
-          "isPartOfComposite": true,
-          "id": "7ad43f71-dd3a-4c89-bc1c-8d8aba2facde",
-          "action": "Move"
-        },
-        {
-          "path": "<Mouse>/position",
-          "isComposite": false,
-          "name": "",
-          "isPartOfComposite": false,
-          "id": "fac6c503-961e-4153-a9f7-403013080eaf",
-          "action": "Pointer"
-        },
-        {
-          "path": "<Mouse>/leftButton",
-          "isComposite": false,
-          "name": "",
-          "isPartOfComposite": false,
-          "id": "6b396e8b-a5f2-46dc-b6d2-59fa863c7d31",
-          "action": "BasicAttack"
-        },
-        {
-          "path": "<Keyboard>/space",
-          "isComposite": false,
-          "name": "",
-          "isPartOfComposite": false,
-          "id": "df6de25a-78a6-43de-b2b5-995859635fbf",
-          "action": "Dodge"
-        },
-        {
-          "path": "<Keyboard>/e",
-          "isComposite": false,
-          "name": "",
-          "isPartOfComposite": false,
-          "id": "1995f88f-441a-48a1-9c74-6f0c4f7ce2d4",
-          "action": "Interact"
+            "name": "Player",
+            "id": "85037030-363a-4cc7-9c20-afd17446ea1a",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "2412f992-b362-4b76-9106-e51efe7d2d25",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                },
+                {
+                    "name": "Pointer",
+                    "type": "Value",
+                    "id": "a0f93f35-b707-4269-b255-957e652f4e15",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                },
+                {
+                    "name": "BasicAttack",
+                    "type": "Button",
+                    "id": "3c6f1da9-badb-4bf5-98b0-53e49d21787a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Dodge",
+                    "type": "Button",
+                    "id": "73bdc6a0-5dd9-49be-bf3a-d108146df2c4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "040fc3df-5eab-4267-9bf1-6cceb502842c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Button",
+                    "id": "f415f61c-2904-494a-88e0-e2748d1c9ce9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WASD",
+                    "id": "563dbf8b-630d-49a7-80c0-30d264cf0a6c",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "7d1def05-4af5-4e36-8ddb-b5685d55b58e",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "a3fc9aef-7c51-4fc1-858d-6801b2ab725f",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "a87db9bb-48ca-4df3-92e0-a01eb2d60cda",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "7ad43f71-dd3a-4c89-bc1c-8d8aba2facde",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "fac6c503-961e-4153-a9f7-403013080eaf",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b396e8b-a5f2-46dc-b6d2-59fa863c7d31",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BasicAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df6de25a-78a6-43de-b2b5-995859635fbf",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dodge",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1995f88f-441a-48a1-9c74-6f0c4f7ce2d4",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52aefc2f-0fd5-4d3c-8ef7-d5054c3a0517",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
-      ],
-      "name": "Player",
-      "actions": [
-        {
-          "type": "Value",
-          "id": "2412f992-b362-4b76-9106-e51efe7d2d25",
-          "name": "Move",
-          "initialStateCheck": true,
-          "expectedControlType": "Vector2"
-        },
-        {
-          "type": "Value",
-          "id": "a0f93f35-b707-4269-b255-957e652f4e15",
-          "name": "Pointer",
-          "initialStateCheck": true,
-          "expectedControlType": "Vector2"
-        },
-        {
-          "type": "Button",
-          "id": "3c6f1da9-badb-4bf5-98b0-53e49d21787a",
-          "name": "BasicAttack",
-          "initialStateCheck": false,
-          "expectedControlType": "Button"
-        },
-        {
-          "type": "Button",
-          "id": "73bdc6a0-5dd9-49be-bf3a-d108146df2c4",
-          "name": "Dodge",
-          "initialStateCheck": false,
-          "expectedControlType": "Button"
-        },
-        {
-          "type": "Button",
-          "id": "040fc3df-5eab-4267-9bf1-6cceb502842c",
-          "name": "Interact",
-          "initialStateCheck": false,
-          "expectedControlType": "Button"
-        }
-      ]
-    }
-  ],
-  "name": "Milestone1",
-  "controlSchemes": []
+    ],
+    "controlSchemes": []
 }
