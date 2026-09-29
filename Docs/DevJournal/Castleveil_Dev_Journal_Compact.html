@@ -45,20 +45,20 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 </div>
 
 <div class="update"><h2>Última atualização</h2><ul>
-<li><strong>Data:</strong> 27/09/2026</li>
-<li><strong>Milestone:</strong> M7.2C — Equipment Visual: idle equipado no personagem</li>
-<li><strong>Status:</strong> Em andamento / aguardando validação manual</li>
-<li><strong>Commit:</strong> pendente</li>
-<li><strong>Arquivos principais:</strong> ErranteDirectionalSprite.cs; ErranteSwordIdleSetup.cs e .meta; Milestone1.unity; Dev Journal.</li>
-<li><strong>Validação:</strong> C# compilado no Editor aberto; oito sprites Sword válidos; seleção Unarmed/Sword conferida para as oito direções via API. Referências antigas preservadas. Sem batchmode, projeto temporário ou teste de Play Mode.</li>
-<li><strong>Próximo passo:</strong> testar idle desarmado, pickup e idle Sword nas oito direções; confirmar ausência da espada flutuante.</li>
+<li><strong>Data:</strong> 29/09/2026</li>
+<li><strong>Atividade:</strong> Inventory / Equipment UI concluído e consolidação das features na main.</li>
+<li><strong>Status:</strong> Concluído, conforme confirmação do usuário.</li>
+<li><strong>Git:</strong> feature/main-menu, feature/initial-cabin e feature/inventory-ui mergeadas e contidas na main. Main atualizada com origin/main; working tree estava limpa após os merges, conforme informado pelo usuário. Hashes dos merges não informados; nenhuma consulta Git nesta atualização.</li>
+<li><strong>Arquivos principais:</strong> InventoryUI.cs, InventoryClickBlocker.cs, InventoryHudSetup.cs, PlayerInputReader.cs, Milestone1.inputactions e Milestone1.unity.</li>
+<li><strong>Validação:</strong> conclusão funcional informada pelo usuário; layout ajustado manualmente no Unity. Esta sessão altera somente o Journal, sem novos testes de gameplay.</li>
+<li><strong>Próximo passo:</strong> manter drag/drop, inventário funcional em grid e lógica dos demais equipamentos para etapas futuras.</li>
 </ul></div>
 <div class="session"><h2>Última sessão</h2><ul>
-<li>WeaponVisual flutuante substituído por sprites equipados no personagem para idle. ErranteDirectionalSprite preserva o set Unarmed e adiciona Sword, mapeado _0.._7 para N/NE/E/SE/S/SW/W/NW.</li>
-<li>HasWeapon seleciona o conjunto; EquipmentChanged existente atualiza imediatamente o idle após pickup, sem polling adicional.</li>
-<li>EquipmentVisualController desabilitado na cena, sem apagar o script; WeaponVisual oculto e referência visual de PlayerEquipment removida na cena para impedir reativação. Lógica de gameplay/pickup intacta.</li>
-<li>Run e Attack atuais preservados; versões equipadas continuam como etapas futuras. PNGs, import settings e Transform do CharacterSprite não alterados pela ferramenta.</li>
-<li>M7.2C aguarda validação manual em Play Mode. Sem commit ou implementação de live reload.</li>
+<li>Concluída a integração de feature/main-menu, feature/initial-cabin e feature/inventory-ui na main; as três branches já estão contidas nela.</li>
+<li>Inventário abre pela tecla I e pelo botão do HUD; X fecha; painel inicia fechado e clique na UI não dispara ataque.</li>
+<li>InventoryGrid inferior preservado; 11 slots individuais com silhuetas discretas, sem nomes visíveis; layout ajustado manualmente no Unity.</li>
+<li>Espada coletada equipa automaticamente e aparece no MainWeaponSlot, atualizada por EquipmentChanged.</li>
+<li>Drag/drop, inventário funcional em grid e lógica dos demais equipamentos continuam futuros. Live reload não implementado.</li>
 </ul></div>
 <div class="toolbar">
 <button class="filter active" data-filter="all">Todos</button>
@@ -78,7 +78,9 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 </ul></div>
 </div></details>
 
-<details class="section" open><summary><span>Concluído</span><span class="badge bdone">8 blocos</span></summary><div class="section-body">
+<details class="section" open><summary><span>Concluído</span><span class="badge bdone">10 blocos</span></summary><div class="section-body">
+<div class="item done" data-status="done"><h3>Inventory / Equipment UI — concluído</h3><p>Tecla I e botão HUD abrem o inventário; X fecha; painel inicia fechado; clique na UI não dispara ataque. InventoryGrid inferior preservado. Slots vazios usam silhuetas discretas; espada coletada equipa automaticamente e aparece no MainWeaponSlot via EquipmentChanged. Layout visual ajustado manualmente no Unity.</p><p>11 slots: MainWeaponSlot, HelmetSlot, ChestSlot, CapeSlot, GlovesSlot, BeltSlot, BootsSlot, SecondarySlot, NecklaceSlot, Ring1Slot e Ring2Slot.</p><p>Drag/drop, inventário funcional em grid e lógica dos demais equipamentos permanecem futuros.</p></div>
+<div class="item done" data-status="done"><h3>Integração das features na main — concluída</h3><p>feature/main-menu, feature/initial-cabin e feature/inventory-ui mergeadas e contidas na main. Main atualizada com origin/main; working tree estava limpa após os merges. Estado informado pelo usuário em 29/09/2026.</p></div>
 <div class="item done" data-status="done"><h3>M1 — Movimento e câmera</h3><p>8 direções, Rigidbody2D, Cinemachine e Input System.</p></div>
 <div class="item done" data-status="done"><h3>M2 — Stats e vida</h3><p>CharacterStats, Health, IDamageable e DamageInfo.</p></div>
 <div class="item done" data-status="done"><h3>M3 — Combate melee</h3><p>Hitbox, dano e timeline de ataque.</p></div>
@@ -91,7 +93,7 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 
 <details class="section"><summary><span>Pausados</span><span class="badge bpaused">4</span></summary><div class="section-body">
 <div class="item paused" data-status="paused"><h3>Idle respirando do Player</h3><p>Adicionar animação de respiração mais viva.</p></div>
-<div class="item paused" data-status="paused"><h3>Equipamentos completos</h3><p>Inventário, slots, raridade e stats.</p></div>
+<div class="item paused" data-status="paused"><h3>Equipamentos completos</h3><p>UI e 11 slots visuais concluídos. Drag/drop, inventário funcional em grid, lógica dos demais equipamentos, raridade e stats continuam futuros.</p></div>
 <div class="item paused" data-status="paused"><h3>Refino do FeralDog</h3><p>LOS, ranges e pivôs.</p></div>
 <div class="item paused" data-status="paused"><h3>Loot label definitiva</h3><p>Atual serve; revisar futuramente.</p></div>
 </div></details>
@@ -249,6 +251,23 @@ main{padding:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margi
 <li>Loop de 1,2 segundo validado automaticamente em dois ciclos pelo Animator, sem entrar em Play Mode.</li>
 <li>Validação manual pendente: abrir MainMenu e conferir continuidade/visual do loop. Gameplay intacto; sem commit ou alterações no live reload.</li>
 </ul></div></div></details>
+<details class="section"><summary><span>Histórico — sessão de 27/09/2026 preservada</span></summary><div class="section-body"><div class="update"><h2>Última atualização</h2><ul>
+<li><strong>Data:</strong> 27/09/2026</li>
+<li><strong>Milestone:</strong> M7.2C — Equipment Visual: idle equipado no personagem</li>
+<li><strong>Status:</strong> Em andamento / aguardando validação manual</li>
+<li><strong>Commit:</strong> pendente</li>
+<li><strong>Arquivos principais:</strong> ErranteDirectionalSprite.cs; ErranteSwordIdleSetup.cs e .meta; Milestone1.unity; Dev Journal.</li>
+<li><strong>Validação:</strong> C# compilado no Editor aberto; oito sprites Sword válidos; seleção Unarmed/Sword conferida para as oito direções via API. Referências antigas preservadas. Sem batchmode, projeto temporário ou teste de Play Mode.</li>
+<li><strong>Próximo passo:</strong> testar idle desarmado, pickup e idle Sword nas oito direções; confirmar ausência da espada flutuante.</li>
+</ul></div>
+<div class="session"><h2>Última sessão</h2><ul>
+<li>WeaponVisual flutuante substituído por sprites equipados no personagem para idle. ErranteDirectionalSprite preserva o set Unarmed e adiciona Sword, mapeado _0.._7 para N/NE/E/SE/S/SW/W/NW.</li>
+<li>HasWeapon seleciona o conjunto; EquipmentChanged existente atualiza imediatamente o idle após pickup, sem polling adicional.</li>
+<li>EquipmentVisualController desabilitado na cena, sem apagar o script; WeaponVisual oculto e referência visual de PlayerEquipment removida na cena para impedir reativação. Lógica de gameplay/pickup intacta.</li>
+<li>Run e Attack atuais preservados; versões equipadas continuam como etapas futuras. PNGs, import settings e Transform do CharacterSprite não alterados pela ferramenta.</li>
+<li>M7.2C aguarda validação manual em Play Mode. Sem commit ou implementação de live reload.</li>
+</ul></div>
+</div></details>
 <div class="footer">Castleveil Dev Journal • v2</div>
 </main>
 <script>
